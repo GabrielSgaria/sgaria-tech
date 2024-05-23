@@ -1,17 +1,18 @@
 import { ButtonContact } from "@/components/button-contact";
 import { CardCounter } from "@/components/counter-up";
-import { CardServices } from "@/components/cards-services";
+
 import { SectionServices } from "@/components/section-services";
+
 
 export default function Home() {
   return (
     <main>
-      <section className="relative h-full pt-40 bg-zinc-950 border-zinc-500/50 mb-20">
+      <section className="relative h-full py-40 bg-zinc-50 border-zinc-500/50 mb-20 bg-[url('../../public/image/background/home.png')]">
         <div className="flex flex-row container mx-auto gap-16 justify-around items-center ">
           <div className="flex flex-col gap-7 max-w-[780px]">
-            <p className="text-5xl font-semibold text-zinc-200 uppercase">
+            <p className="text-5xl font-semibold text-zinc-50 uppercase">
               Especialistas em desenvolvimento para transformar <br />
-              <span className="to-red-700 via-red-500 from-red-700 bg-clip-text bg-gradient-to-r text-transparent"> sua ideia em realidade digital.</span>
+              <span className=""> sua ideia em realidade digital.</span>
             </p>
             <p className="text-zinc-200">
               Descubra como podemos impulsionar sua presença online hoje mesmo com criação de sites, gestão de tráfego pago, sistemas web personalizados e automação.
@@ -22,7 +23,7 @@ export default function Home() {
 
           </div>
         </div>
-        <div className="container mx-auto flex justify-center items-center mt-24">
+        {/* <div className="container mx-auto flex justify-center items-center mt-24">
           <div className="grid px-4 grid-flow-row md:grid-flow-col grid-cols-2 sm:grid-cols-4 gap-3">
             <CardCounter
               andMoney=""
@@ -49,7 +50,7 @@ export default function Home() {
               porcents="hrs"
             />
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className="bg-zinc-900 h-screen container mx-auto rounded-2xl px-0">

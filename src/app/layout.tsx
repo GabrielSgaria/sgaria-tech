@@ -9,7 +9,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: ['100', '300', '400', '500',
 export const metadata: Metadata = {
   title: "SgariaTech - Sites profissionais",
   description: "SgariaTech - Criação de sites profissionais te diferenciando do mercado!",
-  icons: "/favicon.svg",
+  icons: "/favicon.png",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={`bg-zinc-950 text-zinc-50 ${roboto.className}`}>
+      <body className={`bg-zinc-50 text-zinc-950 ${roboto.className}`}>
         <NavBar />
         {children}
       </body>
