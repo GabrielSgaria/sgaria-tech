@@ -29,11 +29,11 @@ export function NavBar() {
         };
 
         window.addEventListener('resize', handleResize);
-        window.addEventListener('scroll', handleScroll); // Adicionando o listener para o scroll
+        window.addEventListener('scroll', handleScroll); 
 
         return () => {
             window.removeEventListener('resize', handleResize);
-            window.removeEventListener('scroll', handleScroll); // Removendo o listener no cleanup
+            window.removeEventListener('scroll', handleScroll); 
         };
     }, []);
 
@@ -55,11 +55,11 @@ export function NavBar() {
                         </Link>
                         <List
                             onClick={handleMenuToggle}
-                            className="size-8 text-zinc-950 hover:size-9 focus:outline-none lg:hidden"
+                            className="size-8 text-zinc-50 hover:size-9 focus:outline-none lg:hidden"
                         />
                     </div>
 
-                    <nav className={`lg:flex lg:flex-row lg:items-center lg:gap-8 ${isMenuOpen ? 'transition-all duration-500 flex-col flex items-center justify-around absolute top-[75px] left-0 bg-zinc-50 bg-opacity-90 bg w-full mt-2 h-[300px] shadow-lg ' : 'hidden'}`}>
+                    <nav className={`lg:flex lg:flex-row lg:items-center lg:gap-8 ${isMenuOpen ? 'transition-all duration-500 flex-col flex items-center justify-around absolute top-[75px] left-0 bg-zinc-950 bg-opacity-95 bg w-full mt-[11px] h-[300px] shadow-lg ' : 'hidden'}`}>
                         <Link href="/" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Início
                         </Link>
