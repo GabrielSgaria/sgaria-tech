@@ -1,8 +1,14 @@
+'use client'
 import { ButtonContact } from "@/components/button-contact";
-import { CardCollaborator } from "@/components/card-collaborator";
-import { CardCounter } from "@/components/counter-up";
 import { SectionServices } from "@/components/section-services";
 import Image from "next/image";
+import { SlideCustomers } from "@/components/slide-customers";
+
+
+//images
+import gabrielImage from '/public/image/gabriel1.jpeg'
+import Link from "next/link";
+import { GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
 
 
 export default function Home() {
@@ -32,11 +38,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        clientes
-      </section>
 
-      <section className="bg-zinc-50 container mx-auto">
+      <section className="bg-zinc-50 container mx-auto mb-10">
         <div className="px-10 md:px-20 py-10 mx-auto flex flex-col gap-10 md:flex-row items-center h-full">
           <div className="flex items-center justify-center text-center gap-4 md:items-start md:justify-start md:text-start md:w-[30%] flex-col md:gap-8">
             <h1 className=" text-5xl font-bold">Nossos Serviços</h1>
@@ -45,60 +48,85 @@ export default function Home() {
           </div>
           <SectionServices />
         </div>
-        
+      </section>
+      <section className="py-20 bg-zinc-950 mb-10">
+        <div className="flex overflow-hidden text-center justify-center text-4xl font-semibold bebasNeue text-neutral-100">
+          <SlideCustomers />
+        </div>
+      </section>
+      <section>
+        alguns de nossos projetos ... 1 pg para cada
       </section>
 
       <section className="py-16 bg-zinc-100">
         NOSSO PORTFÓLIO
       </section>
 
-      <section className="bg-neutral-100 py-16" id="team">
-        <div className="container mx-auto flex flex-col gap-8">
-          <div className="flex flex-col items-center justify-around gap-16 sm:flex-row w-full sm:mb-8">
-            <div className="flex sm:text-5xl text-4xl  text-center sm:text-start font-semibold bebasNeue">
-              CONHEÇA A <br /> NOSSA EQUIPE
-            </div>
-          </div>
-          <div>
-            <h1 className="text-center bebasNeue text-xl sm:text-2xl text-neutral-900 ">
-              Para além de estereótipos, estilos de vestimenta ou preferências
-              musicais, reunimos um time de mentes criativas e abertas.
+      <section>
+        DEPOIMENTOS
+      </section>
+      <section className="bg-neutral-50 py-16" id="team">
+
+        <div className="container mx-auto flex flex-row gap-10">
+          <div className="flex flex-col justify-center gap-8 sm:flex-col w-1/2 ">
+            <h1 className="flex sm:text-5xl text-4xl text-start sm:text-start font-semibold ">
+              CONHEÇA O <br /> IDEALIZADOR
             </h1>
-          </div>
-          <div className="flex justify-center items-center">
-            <div className="sm:flex grid grid-cols-2 gap-8 sm:flex-row sm:justify-between sm:w-full">
-              <CardCollaborator
-                srcCollaborator="/image/collaborator/marcely1x1.jpg"
-                altCollaborator="Marcely CEO"
-                titleCardCollaborator="CEO E ESPECIALISTA GOOGLE MEU NEGÓCIO"
-                textCardCollaborator="Marcely Granado Nied, 22 anos. Fotógrafa e especialista em posicionar marcas no Google."
-              />
-              <CardCollaborator
-                srcCollaborator="/image/collaborator/nied.png"
-                altCollaborator="Nied CEO"
-                titleCardCollaborator="CEO E GROWTH MARKETING"
-                textCardCollaborator="Mateus Nied, 26 anos.
-            Especialista em Social Media e
-            growth Marketing pela FSM."
-              />
-              <CardCollaborator
-                srcCollaborator="/image/collaborator/sgaria1x1.jpeg"
-                altCollaborator="Gabriel Sgaria Dev"
-                titleCardCollaborator="Desenvolvedor de sistemas"
-                textCardCollaborator="Gabriel Sgaria, 26 anos. Desenvolvedor de Sistemas especialista em front-end."
-              />
-              <CardCollaborator
-                srcCollaborator="/image/collaborator/andre1x1.jpg"
-                altCollaborator="Andre Gestor de trafego"
-                titleCardCollaborator="GESTOR DE TRÁFEGO"
-                textCardCollaborator="André Granado, 33 anos. Especialista em anúncios patrocinados Instagram, Facebook e Google ADS."
-              />
+            <div className="flex flex-col">
+              <h2 className="text-start text-xs sm:text-lg text-neutral-500 font-normal">
+                Gabriel Sgaria, Desenvolvedor e Empreendedor desde 2019.
+                Especialista na criação de softwares web personalizados e na gestão estratégica de tráfego pago, com mais de 4 anos de experiência em estratégias comprovadas.
+                Ativo em redes de networking, busca constantemente novidades para oferecer soluções inovadoras e eficientes aos seus clientes.
+                Seu objetivo é ajudar empresas a crescerem e alcançarem seus objetivos.
+              </h2>
+              <span className="text-start text-xs sm:text-lg text-neutral-500 font-normal">
+                Com uma equipe de profissionais talentosos e dedicados, Gabriel Sgaria está pronto para te ajudar a alcançar o sucesso através da tecnologia.
+              </span>
+              <div className="flex justify-around mt-5 text-red-500 font-bold text-sm uppercase transition-all">
+                <div className=" flex items-center justify-center hover:text-red-600 ">
+                  <LinkedinLogo size={24} />
+                  <Link href='https://www.linkedin.com/in/gabriel-sgaria/'>
+                    Linkedin
+                  </Link>
+                </div>
+                <div className="flex items-center justify-center hover:text-red-600">
+                  <InstagramLogo size={24} />
+                  <Link href='https://www.instagram.com/_gabrielsgaria/'>
+                    Instagram Pessoal
+                  </Link>
+                </div>
+                <div className="flex items-center justify-center hover:text-red-600">
+                  <InstagramLogo size={24} />
+                  <Link href='https://www.instagram.com/sg.sites/'>
+                    Instagram Profissional
+                  </Link>
+                </div>
+                <div className="flex items-center justify-center hover:text-red-600">
+                  <GithubLogo size={24} />
+                  <Link href='https://www.instagram.com/sg.sites/'>
+                    Github
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div className="w-1/2 flex items-center justify-center">
+            <Image
+              width={900}
+              height={900}
+              src={gabrielImage}
+              alt=""
+              quality={100}
+              priority={true}
+              className="w-[550px] h-[400px] rounded-xl object-cover shadow-xl"
+            />
+          </div>
+
         </div>
       </section>
       <section>
-        DEPOIMENTOS
+        duvidas frequentes
       </section>
 
     </main >

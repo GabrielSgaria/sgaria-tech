@@ -9,7 +9,7 @@ interface CardServicesProps {
 export function CardServices({ icon, textTitle, textContent }: CardServicesProps) {
   return (
     <div
-      className="hover-icon w-full md:w-[340px] md:h-[250px] rounded-xl border shadow-sm border-zinc-950/20 bg-zinc-50 p-2 flex flex-col justify-around hover:shadow-xl hover:shadow-blue-400/80 hover:transition-all hover:bg-zinc-100"
+      className="hover-icon w-full md:w-[340px] md:h-[250px] rounded-xl border shadow-sm border-zinc-950/20 bg-zinc-50 p-2 flex flex-col justify-around hover:shadow-xl hover:shadow-red-500/80 hover:transition-all hover:bg-zinc-100"
     >
       <div className="flex flex-col items-center justify-start gap-5 mx-5">
         <div className="text-zinc-900  h-10 items-center justify-start flex">
