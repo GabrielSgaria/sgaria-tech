@@ -63,14 +63,14 @@ export function NavBar() {
                         <Link href="/" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Início
                         </Link>
-                        <Link href="/#studies" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
-                            Sobre nós
-                        </Link>
                         <Link href="/#undertaking" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Serviços
                         </Link>
                         <Link href="/#certificates" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Portfólio
+                        </Link>
+                        <Link href="/#studies" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
+                            Sobre nós
                         </Link>
                         <div className={`${isMenuOpen ? 'hidden' : 'h-10 border-l border-zinc-950/20'}`} />
                         <Link href="#contatos" className="hover:bg-zinc-50 flex w-[230px] items-center justify-center gap-2 font-semibold bg-transparent text-sm sm:text-base border border-zinc-50 bg-zinc-300 text-zinc-950 py-2 rounded-xl transition-all duration-200">

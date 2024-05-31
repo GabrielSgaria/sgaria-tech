@@ -1,5 +1,5 @@
 'use client'
-import { Devices, RocketLaunch } from "@phosphor-icons/react";
+import { Devices, HeadCircuit, PresentationChart, Robot, RocketLaunch } from "@phosphor-icons/react";
 import { CardServices } from "./cards-services";
 
 export function SectionServices() {
@@ -14,19 +14,19 @@ export function SectionServices() {
             <div className="md:mt-10 ">
 
              <CardServices
-                icon={<RocketLaunch />}
+                icon={<HeadCircuit />}
                 textTitle="Sistemas Web"
                 textContent="Criamos sistemas web sob medida que otimizam a gestão e operação do seu negócio, integrando as melhores práticas de usabilidade e segurança."
             />
             </div>
              <CardServices
-                icon={<RocketLaunch />}
+                icon={<Robot />}
                 textTitle="Automação de Processos"
                 textContent="Implementamos soluções de automação que aumentam a eficiência operacional, reduzindo custos e melhorando a produtividade da sua empresa."
             />
             <div className="md:mt-10">
              <CardServices
-                icon={<RocketLaunch />}
+                icon={<PresentationChart />}
                 textTitle="Trafego Pago"
                 textContent="Gerenciamos campanhas de tráfego pago para maximizar a visibilidade da sua marca, atraindo clientes qualificados e aumentando suas conversões."
             />
