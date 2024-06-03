@@ -1,17 +1,27 @@
 'use client'
-import { Devices, HeadCircuit, PresentationChart, Robot, RocketLaunch } from "@phosphor-icons/react";
+import { Devices, HeadCircuit, PresentationChart, Robot } from "@phosphor-icons/react";
 import { CardServices } from "./cards-services";
 
 export function SectionServices() {
     return (
 
-        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 md:gap-y-3 md:mr-10">
+        <div className="columns-2 space-y-10 xl:grid-cols-2 xl:gap-x-12 gap-y-5 xl:gap-y-3 w-full mx-auto">
             <CardServices
                 icon={<Devices />}
-                textTitle="Sites e Lading Pages"
+                textTitle="Lading Pages"
+                textContent="Desenvolvemos landing pages personalizadas, garantindo uma presença online profissional e eficaz."
+            />
+            <CardServices
+                icon={<Devices />}
+                textTitle="Sites Institucionais"
                 textContent="Desenvolvemos sites e landing pages personalizados que combinam design atraente com funcionalidade robusta, garantindo uma presença online profissional e eficaz."
             />
-            <div className="md:mt-10 ">
+            <CardServices
+                icon={<Devices />}
+                textTitle="Página de Vendas"
+                textContent="Desenvolvemos sites e landing pages personalizados que combinam design atraente com funcionalidade robusta, garantindo uma presença online profissional e eficaz."
+            />
+            <div className="">
 
              <CardServices
                 icon={<HeadCircuit />}
@@ -24,7 +34,7 @@ export function SectionServices() {
                 textTitle="Automação de Processos"
                 textContent="Implementamos soluções de automação que aumentam a eficiência operacional, reduzindo custos e melhorando a produtividade da sua empresa."
             />
-            <div className="md:mt-10">
+            <div className="">
              <CardServices
                 icon={<PresentationChart />}
                 textTitle="Trafego Pago"
@@ -32,6 +42,7 @@ export function SectionServices() {
             />
 
             </div>
+            
         </div>
 
     )

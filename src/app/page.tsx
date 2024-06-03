@@ -3,12 +3,8 @@ import { ButtonContact } from "@/components/button-contact";
 import { SectionServices } from "@/components/section-services";
 import Image from "next/image";
 import { SlideCustomers } from "@/components/slide-customers";
-
-
-//images
 import gabrielImage from '/public/image/gabriel1.jpeg'
 import Link from "next/link";
-import { GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { ChevronRightIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { AccordionQuestions } from "@/components/accordion-questions";
 import { imageProjects } from "@/lib/image-projetcts";
@@ -42,49 +38,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-zinc-50 container mx-auto mb-10">
-        <div className="px-10 md:px-3 py-10 mx-auto flex flex-col gap-10 md:flex-row md:justify-between items-center h-full">
-          <div className="flex items-center justify-center text-center gap-10 md:items-start md:justify-start md:text-start md:w-[50%] flex-col">
-            <h1 className="text-5xl font-bold ">Nossos <br /> Serviços</h1>
-            <p className="text-start text-base md:text-lg text-zinc-500 font-normal max-w-[550px]">Transformamos suas ideias em realidade digital através de uma gama completa de soluções empresariais</p>
+      <section className="bg-zinc-50 container mx-auto py-10 lg:py-20">
+        <div className="px-10 xl:px-3 mx-auto flex flex-col gap-10 xl:flex-row xl:justify-between items-center h-full">
+          <div className="flex items-center justify-center text-center gap-10 xl:items-start xl:justify-start xl:text-start xl:w-[800px] flex-col">
+            <h1 className="text-5xl font-bold text-start">Nossos <br /> Serviços</h1>
+            <p className="text-center xl:text-start text-base md:text-lg text-zinc-500 font-normal max-w-[500px]">
+              Transformamos suas ideias em realidade digital
+              oferecemos uma gama completa de soluções empresariais para levar sua empresa ao próximo nível.
+            </p>
             <ButtonContact />
           </div>
           <SectionServices />
         </div>
       </section>
-      <section className="py-20 bg-zinc-950 mb-10  overflow-hidden">
-        <div className="mx-auto flex container px-3 relative flex-col">
-          <div className="w-full flex flex-col gap-48 justify-center items-center text-4xl font-semibold text-zinc-100 ">
-            <div className="flex flex-col  md:flex-row justify-between items-center w-full">
-              <h1 className="text-5xl font-bold  text-start">Nossos <br /> Clientes</h1>
-              <span className="mt-10 md:mt-0 md:text-start text-center text-base md:text-lg text-zinc-300 font-normal max-w-[580px]">
-                Temos o orgulho de colaborar com diversas empresas inovadoras e líderes em seus setores.
-                Nossa dedicação em fornecer soluções digitais personalizadas e eficazes nos permitiu construir parcerias duradouras e de sucesso.
-                Aqui estão alguns dos nossos clientes que confiaram em nós para transformar suas ideias em realidade
-              </span>
-            </div>
-            <SlideCustomers />
-          </div>
-          <div className="mt-52 w-full flex items-center justify-center">
-            <ButtonContact />
-          </div>
-        </div>
-      </section>
       <section className="py-20 bg-zinc-50 px-3">
         <div className="flex flex-col container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full">
             <h1 className="flex md:text-5xl text-4xl text-start md:text-start font-semibold">
-              Projetos<br /> Recentes
+              Projetos Recentes
             </h1>
-            <span className="mt-10 md:mt-0 md:text-start text-center text-base md:text-lg text-zinc-950 font-normal max-w-[580px]">
-              Estamos orgulhosos de apresentar alguns dos nossos projetos mais recentes. Cada um desses trabalhos reflete nosso compromisso com a excelência,
-              inovação e satisfação do cliente. De design de interfaces a soluções completas de desenvolvimento,
-              nossos projetos são uma prova do impacto positivo que buscamos criar para nossos parceiros.
-            </span>
           </div>
-          <div className="grid grid-cols-2 grid-flow-row gap-x-32 gap-y-10  mt-20 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row md:gap-x-32 gap-y-10  mt-20 mx-auto">
             {imageProjects.map((imageProjects, index) => (
-              <div key={index} className="flex w-[600px] flex-col overflow-hidden gap-5 drop-shadow-md hover:drop-shadow-xl">
+              <div key={index} className="flex flex-col overflow-hidden gap-5 drop-shadow-md hover:drop-shadow-xl">
                 <Link href={imageProjects.slug}>
                   <Image
                     width={9000}
@@ -92,27 +68,46 @@ export default function Home() {
                     quality={100}
                     alt={imageProjects.alt}
                     src={imageProjects.src}
-                    className="object-fill rounded-xl " />
+                    className="object-fill rounded-xl w-full" />
                 </Link>
                 <div className="flex flex-col gap-2">
-                  <h1 className="text-2xl font-bold text-zinc-800"> {imageProjects.title}</h1>
-                  <span className="text-base text-zinc-600 text-wrap">{imageProjects.textContent}</span>
+                  <h1 className="text-2xl font-bold text-zinc-800 drop-shadow-none"> {imageProjects.title}</h1>
+                  <span className="text-base text-zinc-600 text-wrap drop-shadow-none">{imageProjects.textContent}</span>
                 </div>
               </div>
             ))}
 
           </div>
           <div className="flex items-center justify-center mt-20">
-            <Link href='/portfolio' className="px-5 py-2 rounded-xl transition-all hover:bg-zinc-50 hover:text-zinc-950 border-zinc-600 bg-zinc-950 text-zinc-50 font-bold text-xl flex items-center">
-              Portfólio Completo <ChevronRightIcon className="size-5 font-bold"/>
+            <Link href='/portfolio' className="drop-shadow-md px-5 py-2 rounded-xl transition-all hover:bg-zinc-50 hover:text-zinc-950 border border-zinc-600 bg-zinc-950 text-zinc-50 font-bold text-xl flex items-center">
+              Portfólio Completo <ChevronRightIcon className="size-5 font-bold" />
             </Link>
           </div>
         </div>
       </section>
 
-      <section>
-        DEPOIMENTOS
+      <section className="py-28 bg-zinc-950 mb-10  overflow-hidden">
+        <div className="mx-auto flex container px-3 relative flex-col">
+          <div className="w-full flex flex-col gap-48 justify-center items-center text-4xl font-semibold text-zinc-100 ">
+            <div className="flex flex-col justify-center gap-10 items-center w-full">
+              <h1 className="text-5xl font-bold text-start ">Nossos Clientes</h1>
+              <span className="mt-10 md:mt-0 md:text-center text-base md:text-lg text-zinc-300 font-normal max-w-[580px]">
+                Temos o orgulho de colaborar com diversas empresas inovadoras e líderes em seus setores.
+                Nossa dedicação em fornecer soluções digitais personalizadas e eficazes nos permitiu construir parcerias duradouras e de sucesso.
+                Aqui estão alguns dos nossos clientes que confiaram em nós para transformar suas ideias em realidade
+              </span>
+            </div>
+            <SlideCustomers />
+          </div>
+          <div className="mt-64 w-full flex items-center justify-center">
+            <ButtonContact />
+          </div>
+        </div>
       </section>
+
+      {/* <section>
+        DEPOIMENTOS
+      </section> */}
       <section className="bg-zinc-50 py-16" id="team">
 
         <div className="container mx-auto flex flex-col-reverse md:flex-row gap-10 px-3">

@@ -7,9 +7,9 @@ export function ButtonContact() {
         <div>
             <Link
                 href="#contacts"
-                className="shadow-md hover:bg-zinc-50 hover:text-zinc-950 flex w-[230px] items-center justify-center gap-2 font-semibold bg-transparent text-sm sm:text-base border border-zinc-600 bg-zinc-950 text-zinc-50 py-2 rounded-xl transition-all duration-200"
+                className="ButtonContact  transition-colors drop-shadow-md flex w-[265px] items-center justify-center gap-2 font-semibold text-sm sm:text-xl text-zinc-50 py-2 rounded-xl"
             >
-                ENTRAR EM CONTATO <WhatsappLogo className='size-5 sm:size-5' />
+                ENTRAR EM CONTATO <WhatsappLogo className='size-5 font-bold' />
             </Link>
         </div>
     )

@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export function SlideCustomers() {
     return (
-        <div className="absolute z-20 bottom-20">
+        <div className="absolute z-20 bottom-20 ">
             <Splide
                 options={{
                     type: "loop",
