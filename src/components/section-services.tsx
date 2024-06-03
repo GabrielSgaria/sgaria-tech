@@ -5,7 +5,7 @@ import { CardServices } from "./cards-services";
 export function SectionServices() {
     return (
 
-        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 md:gap-y-3">
+        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 md:gap-y-3 md:mr-10">
             <CardServices
                 icon={<Devices />}
                 textTitle="Sites e Lading Pages"

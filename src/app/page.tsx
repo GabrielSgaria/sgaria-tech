@@ -9,8 +9,9 @@ import { SlideCustomers } from "@/components/slide-customers";
 import gabrielImage from '/public/image/gabriel1.jpeg'
 import Link from "next/link";
 import { GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
-import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { ChevronRightIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { AccordionQuestions } from "@/components/accordion-questions";
+import { imageProjects } from "@/lib/image-projetcts";
 
 
 export default function Home() {
@@ -42,26 +43,71 @@ export default function Home() {
       </section>
 
       <section className="bg-zinc-50 container mx-auto mb-10">
-        <div className="px-10 md:px-20 py-10 mx-auto flex flex-col gap-10 md:flex-row items-center h-full">
-          <div className="flex items-center justify-center text-center gap-4 md:items-start md:justify-start md:text-start md:w-[30%] flex-col md:gap-8">
-            <h1 className="text-5xl font-bold">Nossos Serviços</h1>
-            <p className="text-start text-base md:text-lg text-zinc-500 font-normal">Transformamos suas ideias em realidade digital através de uma gama completa de soluções empresariais</p>
+        <div className="px-10 md:px-3 py-10 mx-auto flex flex-col gap-10 md:flex-row md:justify-between items-center h-full">
+          <div className="flex items-center justify-center text-center gap-10 md:items-start md:justify-start md:text-start md:w-[50%] flex-col">
+            <h1 className="text-5xl font-bold ">Nossos <br /> Serviços</h1>
+            <p className="text-start text-base md:text-lg text-zinc-500 font-normal max-w-[550px]">Transformamos suas ideias em realidade digital através de uma gama completa de soluções empresariais</p>
             <ButtonContact />
           </div>
           <SectionServices />
         </div>
       </section>
-      <section className="py-20 bg-zinc-950 mb-10">
-        <div className="flex overflow-hidden text-center justify-center text-4xl font-semibold bebasNeue text-zinc-100">
-          <SlideCustomers />
+      <section className="py-20 bg-zinc-950 mb-10  overflow-hidden">
+        <div className="mx-auto flex container px-3 relative flex-col">
+          <div className="w-full flex flex-col gap-48 justify-center items-center text-4xl font-semibold text-zinc-100 ">
+            <div className="flex flex-col  md:flex-row justify-between items-center w-full">
+              <h1 className="text-5xl font-bold  text-start">Nossos <br /> Clientes</h1>
+              <span className="mt-10 md:mt-0 md:text-start text-center text-base md:text-lg text-zinc-300 font-normal max-w-[580px]">
+                Temos o orgulho de colaborar com diversas empresas inovadoras e líderes em seus setores.
+                Nossa dedicação em fornecer soluções digitais personalizadas e eficazes nos permitiu construir parcerias duradouras e de sucesso.
+                Aqui estão alguns dos nossos clientes que confiaram em nós para transformar suas ideias em realidade
+              </span>
+            </div>
+            <SlideCustomers />
+          </div>
+          <div className="mt-52 w-full flex items-center justify-center">
+            <ButtonContact />
+          </div>
         </div>
       </section>
-      <section>
-        alguns de nossos projetos ... 1 pg para cada
-      </section>
+      <section className="py-20 bg-zinc-50 px-3">
+        <div className="flex flex-col container mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full">
+            <h1 className="flex md:text-5xl text-4xl text-start md:text-start font-semibold">
+              Projetos<br /> Recentes
+            </h1>
+            <span className="mt-10 md:mt-0 md:text-start text-center text-base md:text-lg text-zinc-950 font-normal max-w-[580px]">
+              Estamos orgulhosos de apresentar alguns dos nossos projetos mais recentes. Cada um desses trabalhos reflete nosso compromisso com a excelência,
+              inovação e satisfação do cliente. De design de interfaces a soluções completas de desenvolvimento,
+              nossos projetos são uma prova do impacto positivo que buscamos criar para nossos parceiros.
+            </span>
+          </div>
+          <div className="grid grid-cols-2 grid-flow-row gap-x-32 gap-y-10  mt-20 mx-auto">
+            {imageProjects.map((imageProjects, index) => (
+              <div key={index} className="flex w-[600px] flex-col overflow-hidden gap-5 drop-shadow-md hover:drop-shadow-xl">
+                <Link href={imageProjects.slug}>
+                  <Image
+                    width={9000}
+                    height={9000}
+                    quality={100}
+                    alt={imageProjects.alt}
+                    src={imageProjects.src}
+                    className="object-fill rounded-xl " />
+                </Link>
+                <div className="flex flex-col gap-2">
+                  <h1 className="text-2xl font-bold text-zinc-800"> {imageProjects.title}</h1>
+                  <span className="text-base text-zinc-600 text-wrap">{imageProjects.textContent}</span>
+                </div>
+              </div>
+            ))}
 
-      <section className="py-16 bg-zinc-100">
-        NOSSO PORTFÓLIO
+          </div>
+          <div className="flex items-center justify-center mt-20">
+            <Link href='/portfolio' className="px-5 py-2 rounded-xl transition-all hover:bg-zinc-50 hover:text-zinc-950 border-zinc-600 bg-zinc-950 text-zinc-50 font-bold text-xl flex items-center">
+              Portfólio Completo <ChevronRightIcon className="size-5 font-bold"/>
+            </Link>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -72,7 +118,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col-reverse md:flex-row gap-10 px-3">
           <div className="flex flex-col items-center justify-center md:items-start gap-8  md:w-1/2 ">
             <h1 className="flex md:text-5xl text-4xl text-start md:text-start font-semibold ">
-              CONHEÇA O <br /> IDEALIZADOR
+              Conheça o <br /> Idealizador
             </h1>
             <div className="flex flex-col">
               <h2 className="text-start text-base md:text-lg text-zinc-500 font-normal">
@@ -146,10 +192,10 @@ export default function Home() {
         <div className="mx-auto container flex flex-col md:flex-row px-3 items-center min-h-[550px] gap-10">
           <div className="md:w-1/3 flex flex-col gap-10 items-center justify-center md:items-start md:justify-start">
             <h1 className="flex md:text-5xl text-4xl text-center md:text-start font-semibold ">
-              PERGUNTAS <br /> FREQUENTES
+              Perguntas <br /> Frequentes
             </h1>
             <span className="md:text-start text-center text-base md:text-lg text-zinc-500 font-normal md:mr-5">
-            Se tiver qualquer dúvida ou precisar de mais informações, por favor, não hesite em nos contatar. Estamos aqui para ajudar!
+              Se tiver qualquer dúvida ou precisar de mais informações, por favor, não hesite em nos contatar. Estamos aqui para ajudar!
             </span>
             <ButtonContact />
           </div>
