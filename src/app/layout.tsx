@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "@/components/nav-bar";
+import { Footer } from "@/components/footer";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ['100', '300', '400', '500', '700', '900'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`bg-zinc-50 text-zinc-950 ${roboto.className}`}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

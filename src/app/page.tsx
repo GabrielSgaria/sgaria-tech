@@ -9,6 +9,8 @@ import { SlideCustomers } from "@/components/slide-customers";
 import gabrielImage from '/public/image/gabriel1.jpeg'
 import Link from "next/link";
 import { GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
+import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { AccordionQuestions } from "@/components/accordion-questions";
 
 
 export default function Home() {
@@ -42,15 +44,15 @@ export default function Home() {
       <section className="bg-zinc-50 container mx-auto mb-10">
         <div className="px-10 md:px-20 py-10 mx-auto flex flex-col gap-10 md:flex-row items-center h-full">
           <div className="flex items-center justify-center text-center gap-4 md:items-start md:justify-start md:text-start md:w-[30%] flex-col md:gap-8">
-            <h1 className=" text-5xl font-bold">Nossos Serviços</h1>
-            <p className="">Transformamos suas ideias em realidade digital através de uma gama completa de soluções empresariais</p>
+            <h1 className="text-5xl font-bold">Nossos Serviços</h1>
+            <p className="text-start text-base md:text-lg text-zinc-500 font-normal">Transformamos suas ideias em realidade digital através de uma gama completa de soluções empresariais</p>
             <ButtonContact />
           </div>
           <SectionServices />
         </div>
       </section>
       <section className="py-20 bg-zinc-950 mb-10">
-        <div className="flex overflow-hidden text-center justify-center text-4xl font-semibold bebasNeue text-neutral-100">
+        <div className="flex overflow-hidden text-center justify-center text-4xl font-semibold bebasNeue text-zinc-100">
           <SlideCustomers />
         </div>
       </section>
@@ -65,53 +67,68 @@ export default function Home() {
       <section>
         DEPOIMENTOS
       </section>
-      <section className="bg-neutral-50 py-16" id="team">
+      <section className="bg-zinc-50 py-16" id="team">
 
-        <div className="container mx-auto flex flex-row gap-10">
-          <div className="flex flex-col justify-center gap-8 sm:flex-col w-1/2 ">
-            <h1 className="flex sm:text-5xl text-4xl text-start sm:text-start font-semibold ">
+        <div className="container mx-auto flex flex-col-reverse md:flex-row gap-10 px-3">
+          <div className="flex flex-col items-center justify-center md:items-start gap-8  md:w-1/2 ">
+            <h1 className="flex md:text-5xl text-4xl text-start md:text-start font-semibold ">
               CONHEÇA O <br /> IDEALIZADOR
             </h1>
             <div className="flex flex-col">
-              <h2 className="text-start text-xs sm:text-lg text-neutral-500 font-normal">
+              <h2 className="text-start text-base md:text-lg text-zinc-500 font-normal">
                 Gabriel Sgaria, Desenvolvedor e Empreendedor desde 2019.
                 Especialista na criação de softwares web personalizados e na gestão estratégica de tráfego pago, com mais de 4 anos de experiência em estratégias comprovadas.
                 Ativo em redes de networking, busca constantemente novidades para oferecer soluções inovadoras e eficientes aos seus clientes.
                 Seu objetivo é ajudar empresas a crescerem e alcançarem seus objetivos.
               </h2>
-              <span className="text-start text-xs sm:text-lg text-neutral-500 font-normal">
+              <span className="text-start text-base md:text-lg text-zinc-500 font-normal mt-5">
                 Com uma equipe de profissionais talentosos e dedicados, Gabriel Sgaria está pronto para te ajudar a alcançar o sucesso através da tecnologia.
               </span>
-              <div className="flex justify-around mt-5 text-red-500 font-bold text-sm uppercase transition-all">
-                <div className=" flex items-center justify-center hover:text-red-600 ">
-                  <LinkedinLogo size={24} />
-                  <Link href='https://www.linkedin.com/in/gabriel-sgaria/'>
-                    Linkedin
-                  </Link>
-                </div>
-                <div className="flex items-center justify-center hover:text-red-600">
-                  <InstagramLogo size={24} />
-                  <Link href='https://www.instagram.com/_gabrielsgaria/'>
-                    Instagram Pessoal
-                  </Link>
-                </div>
-                <div className="flex items-center justify-center hover:text-red-600">
-                  <InstagramLogo size={24} />
-                  <Link href='https://www.instagram.com/sg.sites/'>
-                    Instagram Profissional
-                  </Link>
-                </div>
-                <div className="flex items-center justify-center hover:text-red-600">
-                  <GithubLogo size={24} />
-                  <Link href='https://www.instagram.com/sg.sites/'>
-                    Github
-                  </Link>
-                </div>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:items-start md:justify-start">
+                <Link
+                  target="blank"
+                  href="https://github.com/GabrielSgaria"
+                  className="flex cursor-pointer flex-row transition-all items-center gap-2 text-zinc-800/70 hover:text-zinc-800"
+                >
+                  <GitHubLogoIcon className="size-6" />
+                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-zinc-800">
+                    github.com/GabrielSgaria
+                  </p>
+                </Link>
+                <Link
+                  target="blank"
+                  href="https://www.linkedin.com/in/gabriel-sgaria/"
+                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-zinc-800/70 hover:text-zinc-800"
+                >
+                  <LinkedInLogoIcon className="size-6" />
+                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-zinc-800">
+                    gabriel-sgaria
+                  </p>
+                </Link>
+                <Link
+                  target="blank"
+                  href="https://www.instagram.com/_gabrielsgaria"
+                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-zinc-800/70 hover:text-zinc-800"
+                >
+                  <InstagramLogoIcon className="size-6" />
+                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-zinc-800">
+                    @_gabrielsgaria
+                  </p>
+                </Link>
+                <Link
+                  target="blank"
+                  href="https://www.instagram.com/sg.sites/"
+                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-zinc-800/70 hover:text-zinc-800"
+                >
+                  <InstagramLogoIcon className="size-6" />
+                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-zinc-800">
+                    @sg.sites
+                  </p>
+                </Link>
               </div>
             </div>
           </div>
-
-          <div className="w-1/2 flex items-center justify-center">
+          <div className="md:w-1/2 flex items-center justify-center">
             <Image
               width={900}
               height={900}
@@ -125,8 +142,25 @@ export default function Home() {
 
         </div>
       </section>
-      <section>
-        duvidas frequentes
+      <section className="py-16 bg-zinc-50 ">
+        <div className="mx-auto container flex flex-col md:flex-row px-3 items-center min-h-[550px] gap-10">
+          <div className="md:w-1/3 flex flex-col gap-10 items-center justify-center md:items-start md:justify-start">
+            <h1 className="flex md:text-5xl text-4xl text-center md:text-start font-semibold ">
+              PERGUNTAS <br /> FREQUENTES
+            </h1>
+            <span className="md:text-start text-center text-base md:text-lg text-zinc-500 font-normal md:mr-5">
+            Se tiver qualquer dúvida ou precisar de mais informações, por favor, não hesite em nos contatar. Estamos aqui para ajudar!
+            </span>
+            <ButtonContact />
+          </div>
+          <div className="md:w-2/3">
+            <AccordionQuestions />
+
+          </div>
+
+
+
+        </div>
       </section>
 
     </main >

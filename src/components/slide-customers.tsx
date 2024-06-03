@@ -39,7 +39,7 @@ export function SlideCustomers() {
                         quality={100}
                         alt=""
                         src='/image/customers/fp.png'
-                        className="w-24 max-w-24 opacity-65 hover:opacity-100"
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100"
                     />
                 </SplideSlide>
                 <SplideSlide className="flex items-center">
@@ -49,7 +49,7 @@ export function SlideCustomers() {
                         quality={100}
                         alt=""
                         src='/image/customers/izack-automoveis.png'
-                        className="max-w-24 opacity-65 hover:opacity-100"
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100"
                     />
                 </SplideSlide>
                 <SplideSlide className="flex items-center">
@@ -59,7 +59,7 @@ export function SlideCustomers() {
                         quality={100}
                         alt=""
                         src="/image/customers/kf.png"
-                        className="max-w-24 opacity-65 hover:opacity-100 rounded-md"
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100 rounded-md"
                     />
                 </SplideSlide>
                 <SplideSlide className="flex items-center">
@@ -69,7 +69,7 @@ export function SlideCustomers() {
                         quality={100}
                         alt=""
                         src="/image/customers/m2.png"
-                        className="max-w-24 opacity-65 hover:opacity-100"
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100"
                     />
                 </SplideSlide>
                 <SplideSlide className="flex items-center">
@@ -79,7 +79,7 @@ export function SlideCustomers() {
                         quality={100}
                         alt=""
                         src="/image/customers/ripinhais.png"
-                        className="max-w-24 opacity-65 hover:opacity-100"
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100"
                     />
                 </SplideSlide>
                 <SplideSlide className="flex items-center">
@@ -89,7 +89,7 @@ export function SlideCustomers() {
                         quality={100}
                         alt=""
                         src="/image/customers/volpress.png"
-                        className="max-w-24 opacity-65 hover:opacity-100"
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100"
                     />
                 </SplideSlide>
                 <SplideSlide className="flex items-center">
@@ -99,7 +99,7 @@ export function SlideCustomers() {
                         quality={100}
                         alt=""
                         src="/image/customers/maceno-films-company.png"
-                        className="max-w-24 opacity-65 hover:opacity-100"
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100"
                     />
                 </SplideSlide>
                 <SplideSlide className="flex items-center">
@@ -109,7 +109,7 @@ export function SlideCustomers() {
                         quality={100}
                         alt=""
                         src="/image/customers/agencia-cami.png"
-                        className="max-w-24 opacity-65 hover:opacity-100"
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100"
                     />
                 </SplideSlide>
             </Splide>
