@@ -4,7 +4,7 @@
 
 
 .hover-icon:hover .icon-card {
-    background-color: rgb(239 68 68);
+    background-color: rgb(9 9 11 / 1);
     transition: all 0.3s ease; 
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -43,13 +43,4 @@
     to {
       height: 0;
     }
-  }
-  .ButtonContact {
-    background-image: linear-gradient(to right top, #dc2626, #e02c2c, #e33232, #e73837, #ea3d3d, #ea3d3d, #ea3d3d, #ea3d3d, #e73837, #e33232, #e02c2c, #dc2626);
-
-  }
-  
-  .ButtonContact:hover {
-    background-image: linear-gradient(to right top, #dc2626, #dc2626, #dc2626, #dc2626, #dc2626, #dc2626, #dc2626, #dc2626, #dc2626, #dc2626, #dc2626, #dc2626);
-
   }

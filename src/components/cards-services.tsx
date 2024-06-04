@@ -9,21 +9,20 @@ interface CardServicesProps {
 export function CardServices({ icon, textTitle, textContent }: CardServicesProps) {
   return (
     <div
-      className="hover-icon w-full h-full rounded-xl border shadow-md border-zinc-950/20 bg-zinc-50 p-3 flex flex-col justify-around hover:shadow-xl hover:shadow-red-500/80 hover:transition-all hover:bg-zinc-100"
+      className=" relative w-full md:w-[400px] h-[250px] hover-icon rounded-3xl border border-red-600 shadow-md border-zinc-950/20 bg-cover bg-[url('../../public/image/background/home.png')] p-3 flex flex-col justify-around hover:shadow-xl hover:transition-all hover:bg-zinc-100"
     >
-      <div className="flex flex-col items-center justify-start gap-5 mx-5 my-5">
-        <div className="text-zinc-900  h-10 items-center justify-start flex">
-          <div className="icon-card p-2 text-5xl rounded-full my-5 transition-all w-full bg-red-600 text-zinc-50">
-            {icon}
-          </div>
+      <div className="flex flex-col items-start justify-start gap-5 p-5">
+        <div className="icon-card bg-red-600 border-4 border-zinc-50 p-2 text-5xl rounded-3xl transition-all text-zinc-50 w-20 h-20 flex items-center justify-center absolute -top-10 left-4">
+          {icon}
         </div>
-        <h1 className="text-zinc-900 font-bold text-lg lg:text-xl uppercase text-center w-full justify-start">
+       
+        <h1 className="text-zinc-50 font-bold text-lg lg:text-2xl justify-start items-start text-wrap text-start mt-5">
           {textTitle}
         </h1>
+        <p className="text-zinc-200 text-start text-sm lg:text-sm ">
+          {textContent}
+        </p>
       </div>
-      <p className="text-zinc-600 text-start text-sm lg:text-base mx-5">
-        {textContent}
-      </p>
     </div>
   );
 }

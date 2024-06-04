@@ -4,54 +4,82 @@ import { SectionServices } from "@/components/section-services";
 import Image from "next/image";
 import { SlideCustomers } from "@/components/slide-customers";
 import gabrielImage from '/public/image/gabriel1.jpeg'
+import logo from '/public/image/logo.png'
 import Link from "next/link";
-import { ChevronRightIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { ChevronRightIcon, DoubleArrowRightIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { AccordionQuestions } from "@/components/accordion-questions";
 import { imageProjects } from "@/lib/image-projetcts";
+import { WhatsappLogo } from "@phosphor-icons/react";
 
 
 export default function Home() {
   return (
     <main>
-      <section className="relative h-full py-40 md:py-48 bg-zinc-50 border-zinc-500/50 mb-10 bg-[url('../../public/image/background/home.png')]">
-        <div className="flex flex-col md:flex-row container mx-auto gap-16 justify-around items-center px-3">
-          <div className="flex flex-col gap-7 w-full md:max-w-[780px] items-center justify-center  md:items-start">
+      <section className="relative h-full py-40 md:py-48 bg-zinc-50 border-zinc-500/50 bg-cover bg-[url('../../public/image/background/home.png')]">
+        <div className="flex flex-col-reverse md:flex-row container mx-auto gap-20 justify-around items-center px-3">
+          <div className="flex flex-col gap-10 w-full md:max-w-[700px] items-center justify-start  md:items-start">
             <p className="text-4xl md:text-5xl font-semibold text-zinc-50 uppercase text-center md:text-start ">
-              Especialistas em desenvolvimento para transformar <br />
-              <span> sua ideia em realidade digital.</span>
+              Especialistas em <br />desenvolvimento  
+              para transformar sua ideia em
+              <span className=""> realidade digital.</span>
             </p>
-            <p className="text-zinc-200 text-center md:text-start">
+            <p className="text-zinc-200 text-center md:text-start max-w-[530px]">
               Descubra como podemos impulsionar sua presença online hoje mesmo com criação de sites, gestão de tráfego pago, sistemas web personalizados e automação.
             </p>
-            <ButtonContact />
+            <div className="flex gap-10 items-center justify-start h-16 md:w-[480px]">
+              <ButtonContact />
+              <a className="w-40 h-12 uppercase text-center text-zinc-50 justify-center rounded-full hover:border border-zinc-400 cursor-pointer font-bold hover:text-zinc-400 transition-all sm:text-base text-sm flex items-center gap-2">
+                Sobre Nós <DoubleArrowRightIcon className="size-4" />
+              </a>
+            </div>
           </div>
-          <div className="w-64">
-            <Image
-              width={900}
-              height={900}
-              quality={100}
+          <div className="flex w-[380px] md:w-[450px]">
+            <Image 
+              width={9000}
+              height={9000}
+              src={logo}
+              alt="Logo SG TECH"
               priority={true}
-              src='https://sa-east-1.graphassets.com/clwqlca22006e07lv6chcfoo8/clwqokzly01i207kix1xkn0sa'
-              alt="Logo Sgaria"
+              quality={100}
+              className='w-full object-fill'
             />
+
           </div>
         </div>
       </section>
 
       <section className="bg-zinc-50 container mx-auto py-10 lg:py-20">
-        <div className="px-10 xl:px-3 mx-auto flex flex-col gap-10 xl:flex-row xl:justify-between items-center h-full">
-          <div className="flex items-center justify-center text-center gap-10 xl:items-start xl:justify-start xl:text-start xl:w-[800px] flex-col">
+        <div className="md:px-10 px-3 mx-auto flex flex-col gap-10">
+          <div className="md:px-10 px-3 mx-auto flex-col flex md:flex-row gap-10 justify-around items-center w-full h-full">
             <h1 className="text-5xl font-bold text-start">Nossos <br /> Serviços</h1>
-            <p className="text-center xl:text-start text-base md:text-lg text-zinc-500 font-normal max-w-[500px]">
+            <p className="text-center xl:text-start text-base md:text-lg text-zinc-500 font-normal md:max-w-[500px]">
               Transformamos suas ideias em realidade digital
               oferecemos uma gama completa de soluções empresariais para levar sua empresa ao próximo nível.
             </p>
-            <ButtonContact />
           </div>
           <SectionServices />
         </div>
+        <div className="flex items-center justify-center w-full">
+
+        </div>
       </section>
-      <section className="py-20 bg-zinc-50 px-3">
+      <section className="py-10 container mx-auto px-3 md:px-20">
+        <div className="bg-bottom bg-cover md:bg-top bg-no-repeat w-full h-[700px] bg-[url('../../public/image/background/bg-wpp-mobile.png')] md:bg-[url('../../public/image/background/bg-wpp.png')] rounded-3xl flex md:h-[500px] items-start justify-center md:items-center md:justify-end shadow-lg">
+          <div className="md:w-1/2 h-1/2 w-full md:h-full flex flex-col gap-10 items-start justify-center px-10 pt-10 md:pt-0">
+            <p className="text-zinc-50 font-bold text-4xl md:text-5xl">PRECISA DE UM PROJETO SOB MEDIDA?</p>
+            <span className="text-zinc-300 text-lg md:text-xl">Estamos prontos para ouvir suas ideias e oferecer soluções personalizadas.</span>
+            <Link
+              href="#contacts"
+              className="shadow-lg hover:shadow-inner hover:shadow-zinc-800 flex items-center justify-center gap-2 text-sm sm:text-base bg-green-600 hover:bg-green-600/95 transition-all font-bold text-zinc-50 py-3 px-5 rounded-full"
+            >
+              Solicitar um Orçamento Personalizado <WhatsappLogo className='size-5 font-bold' />
+            </Link>
+          </div>
+        </div>
+
+
+      </section>
+      <section className="py-10 bg-zinc-50 px-3">
         <div className="flex flex-col container mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center w-full">
             <h1 className="flex md:text-5xl text-4xl text-start md:text-start font-semibold">
@@ -60,7 +88,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row md:gap-x-32 gap-y-10  mt-20 mx-auto">
             {imageProjects.map((imageProjects, index) => (
-              <div key={index} className="flex flex-col overflow-hidden gap-5 drop-shadow-md hover:drop-shadow-xl">
+              <div key={index} className="flex flex-col overflow-hidden gap-5 drop-shadow-md hover:drop-shadow-xl transition-all">
                 <Link href={imageProjects.slug}>
                   <Image
                     width={9000}
@@ -68,7 +96,7 @@ export default function Home() {
                     quality={100}
                     alt={imageProjects.alt}
                     src={imageProjects.src}
-                    className="object-fill rounded-xl w-full" />
+                    className="object-fill rounded-3xl w-full hover:opacity-75 transition-all" />
                 </Link>
                 <div className="flex flex-col gap-2">
                   <h1 className="text-2xl font-bold text-zinc-800 drop-shadow-none"> {imageProjects.title}</h1>
@@ -79,14 +107,14 @@ export default function Home() {
 
           </div>
           <div className="flex items-center justify-center mt-20">
-            <Link href='/portfolio' className="drop-shadow-md px-5 py-2 rounded-xl transition-all hover:bg-zinc-50 hover:text-zinc-950 border border-zinc-600 bg-zinc-950 text-zinc-50 font-bold text-xl flex items-center">
+            <Link href='/portfolio' className="drop-shadow-md px-5 py-2 rounded-full transition-all hover:bg-zinc-50 hover:text-zinc-950 border border-zinc-600 bg-zinc-950 text-zinc-50 font-bold text-xl flex items-center">
               Portfólio Completo <ChevronRightIcon className="size-5 font-bold" />
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-28 bg-zinc-950 mb-10  overflow-hidden">
+      <section className="py-28 bg-cover bg-[url('../../public/image/background/home.png')] mb-10  overflow-hidden">
         <div className="mx-auto flex container px-3 relative flex-col">
           <div className="w-full flex flex-col gap-48 justify-center items-center text-4xl font-semibold text-zinc-100 ">
             <div className="flex flex-col justify-center gap-10 items-center w-full">
@@ -99,7 +127,7 @@ export default function Home() {
             </div>
             <SlideCustomers />
           </div>
-          <div className="mt-64 w-full flex items-center justify-center">
+          <div className="mt-72 w-full flex items-center justify-center">
             <ButtonContact />
           </div>
         </div>
@@ -113,7 +141,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col-reverse md:flex-row gap-10 px-3">
           <div className="flex flex-col items-center justify-center md:items-start gap-8  md:w-1/2 ">
             <h1 className="flex md:text-5xl text-4xl text-start md:text-start font-semibold ">
-              Conheça o <br /> Idealizador
+              Conheça o <br /> Fundador e CEO
             </h1>
             <div className="flex flex-col">
               <h2 className="text-start text-base md:text-lg text-zinc-500 font-normal">
@@ -129,40 +157,40 @@ export default function Home() {
                 <Link
                   target="blank"
                   href="https://github.com/GabrielSgaria"
-                  className="flex cursor-pointer flex-row transition-all items-center gap-2 text-zinc-800/70 hover:text-zinc-800"
+                  className="flex cursor-pointer flex-row transition-all items-center gap-2 text-red-600/70 hover:text-red-600"
                 >
                   <GitHubLogoIcon className="size-6" />
-                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-zinc-800">
-                    github.com/GabrielSgaria
+                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-red-600">
+                    GabrielSgaria
                   </p>
                 </Link>
                 <Link
                   target="blank"
                   href="https://www.linkedin.com/in/gabriel-sgaria/"
-                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-zinc-800/70 hover:text-zinc-800"
+                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-red-600/70 hover:text-red-600"
                 >
                   <LinkedInLogoIcon className="size-6" />
-                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-zinc-800">
+                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-red-600">
                     gabriel-sgaria
                   </p>
                 </Link>
                 <Link
                   target="blank"
                   href="https://www.instagram.com/_gabrielsgaria"
-                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-zinc-800/70 hover:text-zinc-800"
+                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-red-600/70 hover:text-red-600"
                 >
                   <InstagramLogoIcon className="size-6" />
-                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-zinc-800">
+                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-red-600">
                     @_gabrielsgaria
                   </p>
                 </Link>
                 <Link
                   target="blank"
                   href="https://www.instagram.com/sg.sites/"
-                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-zinc-800/70 hover:text-zinc-800"
+                  className="flex cursor-pointer transition-all  flex-row items-center gap-2 text-red-600/70 hover:text-red-600"
                 >
                   <InstagramLogoIcon className="size-6" />
-                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-zinc-800">
+                  <p className="h-6 font-semibold hover:border-b-[1px] hover:border-red-600">
                     @sg.sites
                   </p>
                 </Link>
@@ -183,6 +211,9 @@ export default function Home() {
 
         </div>
       </section>
+
+      <section></section>
+
       <section className="py-16 bg-zinc-50 ">
         <div className="mx-auto container flex flex-col md:flex-row px-3 items-center min-h-[550px] gap-10">
           <div className="md:w-1/3 flex flex-col gap-10 items-center justify-center md:items-start md:justify-start">
@@ -196,11 +227,7 @@ export default function Home() {
           </div>
           <div className="md:w-2/3">
             <AccordionQuestions />
-
           </div>
-
-
-
         </div>
       </section>
 

@@ -38,9 +38,9 @@ export function NavBar() {
     }, []);
 
     return (
-        <header className={`fixed top-0 z-50 w-full transition-all duration-500 ${isVisible ? 'bg-zinc-950/95' : 'bg-transparent'}`}>
+        <header className={`w-full absolute top-0 z-50 ${isMenuOpen ? ' bg-zinc-950 bg-opacity-95' : 'bg-transparent'} `}>
             <div className="shadow-sm bg-transparent py-2">
-                <div className="container mx-auto flex flex-row items-center justify-between gap-8 py-3 px-4 sm:px-0 text-base lg:justify-between">
+                <div className="container mx-auto flex flex-row items-center justify-between gap-8 py-3 px-4 sm:px-0 text-base lg:justify-between ">
                     <div className="flex items-center justify-between w-full lg:w-36">
                         <Link href="/" className='w-36'>
                             <Image
@@ -73,7 +73,7 @@ export function NavBar() {
                             Sobre nós
                         </Link>
                         <div className={`${isMenuOpen ? 'hidden' : 'h-10 border-l border-zinc-950/20'}`} />
-                        <Link href="#contatos" className="hover:bg-zinc-50 hover:text-zinc-950 flex w-[230px] items-center justify-center gap-2 font-semibold bg-transparent text-sm sm:text-base border border-zinc-600 bg-zinc-950 text-zinc-50 py-2 rounded-xl transition-all duration-200">
+                        <Link href="#contatos" className="hover:bg-zinc-50 hover:text-zinc-950 flex w-[230px] items-center justify-center gap-2 font-semibold bg-transparent text-sm sm:text-base border border-zinc-600 bg-zinc-950 text-zinc-50 py-2 rounded-full transition-all duration-200">
                             ENTRAR EM CONTATO <WhatsappLogo className='size-5 sm:size-5' />
                         </Link>
                     </nav>

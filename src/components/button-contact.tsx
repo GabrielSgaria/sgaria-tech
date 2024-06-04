@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export function ButtonContact() {
     return (
-        <div>
-            <Link
-                href="#contacts"
-                className="ButtonContact  transition-colors drop-shadow-md flex w-[265px] items-center justify-center gap-2 font-semibold text-sm sm:text-xl text-zinc-50 py-2 rounded-xl"
-            >
-                ENTRAR EM CONTATO <WhatsappLogo className='size-5 font-bold' />
-            </Link>
-        </div>
+
+        <Link
+            href="#contacts"
+            className="shadow-lg hover:shadow-inner hover:shadow-zinc-800 flex items-center justify-center gap-2 text-sm sm:text-base bg-red-600 hover:bg-red-600/95 transition-all font-bold text-zinc-50 py-3 px-5 rounded-full"
+        >
+            ENTRAR EM CONTATO <WhatsappLogo className='size-5 font-bold' />
+        </Link>
+
     )
 }
