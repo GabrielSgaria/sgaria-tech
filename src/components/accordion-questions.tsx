@@ -10,6 +10,7 @@ export function AccordionQuestions() {
             className="rounded-md w-full sm:mx-1 bg-cover bg-[url('../../public/image/background/home.png')] text-neutral-100 shadow-2xl text-center"
             type="single"
             collapsible
+            id="quests"
         >
             <Accordion.Item value="item-1">
                 <Accordion.Trigger className="AccordionTrigger flex flex-row justify-between w-full items-center p-4 rounded-md ">

@@ -23,7 +23,7 @@ export function Footer() {
             para contato
           </h1>
           <p className="mt-8 max-w-[300px] text-center text-sm text-zinc-500 sm:text-start sm:text-base">
-            Sinta-se à vontade para entrar em contato comigo a qualquer momento.
+            Sinta-se à vontade para entrar em contato conosco a qualquer momento.
           </p>
           <div className="mt-8 flex flex-col gap-4 text-center sm:items-start sm:justify-start">
             <a
@@ -94,8 +94,7 @@ export function Footer() {
             Atual <br /> disponibilidade
           </h1>
           <p className="mt-8 max-w-[300px] text-center text-sm text-zinc-500 sm:text-start sm:text-base">
-            Estou sempre aberto a novos projetos e colaborações, disponível
-            imediatamente para explorar novas oportunidades!
+            Estamos sempre abertos a novos projetos e colaborações
           </p>
         </div>
         <div className="flex flex-col items-center sm:items-start">

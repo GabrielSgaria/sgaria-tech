@@ -75,8 +75,9 @@ export function NavBar() {
                         <Link href="/#plans" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Planos
                         </Link>
-                        <Link href="/#about" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
-                            Sobre nós
+                       
+                        <Link href="/#quests" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
+                            Perguntas Frequentes
                         </Link>
                         <div className={`${isMenuOpen ? 'hidden' : 'h-10 border-l border-zinc-950/20'}`} />
 
