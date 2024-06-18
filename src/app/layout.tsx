@@ -5,6 +5,7 @@ import { NavBar } from "@/components/nav-bar";
 import { ButtonWhatsAppFixed } from "@/components/button-whatsapp-fixed";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google"
 
+
 const roboto = Roboto({ subsets: ["latin"], weight: ['100', '300', '400', '500', '700', '900'] });
 
 
