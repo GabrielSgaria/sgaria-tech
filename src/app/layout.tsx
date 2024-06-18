@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt">
+    <html lang="pt" className="scroll-smooth focus:scroll-auto">
       <body className={`bg-zinc-50 text-zinc-950 ${roboto.className}`}>
         <NavBar />
         {children}

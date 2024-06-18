@@ -37,6 +37,8 @@ export function NavBar() {
         };
     }, []);
 
+    
+
     return (
         <header className={`w-full absolute top-0 z-50 ${isMenuOpen ? ' bg-zinc-950 bg-opacity-95' : 'bg-transparent'} `}>
             <div className="shadow-sm bg-transparent py-2">
@@ -63,13 +65,16 @@ export function NavBar() {
                         <Link href="/" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Início
                         </Link>
-                        <Link href="/#undertaking" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
+                        <Link href={`/#services`} onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Serviços
                         </Link>
-                        <Link href="/#certificates" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
+                        <Link href="/#projects" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Portfólio
                         </Link>
-                        <Link href="/#studies" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
+                        <Link href="/#plans" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
+                            Planos
+                        </Link>
+                        <Link href="/#about" onClick={closeMenu} className="cursor-pointer rounded-xl bg-transparent text-zinc-50 transition-all duration-200 font-bold hover:underline">
                             Sobre nós
                         </Link>
                         <div className={`${isMenuOpen ? 'hidden' : 'h-10 border-l border-zinc-950/20'}`} />

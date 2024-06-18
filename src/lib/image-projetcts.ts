@@ -34,18 +34,18 @@ export const imageProjects = [
         textContent: 'Desenvolvimento completo da landing page com foco em SEO, garantindo um excelente posicionamento no Google.',
         slug: 'm2-agencia-de-marketing'
     },
-    {
-        src: izack,
-        alt: 'Site Izack Automóveis',
-        title: 'Izack Automóveis',
-        textContent: 'Desenvolvimento de um e-commerce completo para a loja de carros Izack Automóveis, com foco em uma experiência de compra eficiente e agradável.',
-        slug: 'izack-automoveis'
-    },
-    {
-        src: volpress,
-        alt: 'Site Volpress',
-        title: 'Volpress Transportadora',
-        textContent: 'Desenvolvimento do site institucional para a empresa de transportes Volpress, destacando seus serviços e diferenciais no mercado.',
-        slug: 'volpress-transportadora'
-    }
+    // {
+    //     src: izack,
+    //     alt: 'Site Izack Automóveis',
+    //     title: 'Izack Automóveis',
+    //     textContent: 'Desenvolvimento de um e-commerce completo para a loja de carros Izack Automóveis, com foco em uma experiência de compra eficiente e agradável.',
+    //     slug: 'izack-automoveis'
+    // },
+    // {
+    //     src: volpress,
+    //     alt: 'Site Volpress',
+    //     title: 'Volpress Transportadora',
+    //     textContent: 'Desenvolvimento do site institucional para a empresa de transportes Volpress, destacando seus serviços e diferenciais no mercado.',
+    //     slug: 'volpress-transportadora'
+    // }
 ];

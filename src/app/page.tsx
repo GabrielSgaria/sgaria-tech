@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-zinc-50 container mx-auto py-10 lg:py-20">
+      <section className="bg-zinc-50 container mx-auto py-10 lg:py-20" id="services">
         <div className="md:px-10 px-3 mx-auto flex flex-col gap-10">
           <div className="md:px-10 px-3 mx-auto flex-col flex md:flex-row gap-10 justify-around items-center w-full h-full">
             <h1 className="text-5xl font-bold text-start">Nossos <br /> Serviços</h1>
@@ -80,7 +80,7 @@ export default function Home() {
 
 
       </section>
-      <section className="py-10 bg-zinc-50 px-3">
+      <section className="py-10 bg-zinc-50 px-3" id="projects">
         <div className="flex flex-col container mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center w-full">
             <h1 className="flex md:text-5xl text-4xl text-start md:text-start font-semibold">
@@ -134,7 +134,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16" id='plans'>
         <div className="mx-auto container flex flex-col px-3 items-center justify-center">
           <div className="grid grid-flow-row grid-cols-3 gap-10">
 
@@ -237,7 +237,7 @@ export default function Home() {
       {/* <section>
         DEPOIMENTOS
       </section> */}
-      <section className="bg-zinc-50 py-16" id="team">
+      <section className="bg-zinc-50 py-16" id="about">
 
         <div className="container mx-auto flex flex-col-reverse md:flex-row gap-10 px-3">
           <div className="flex flex-col items-center justify-center md:items-start gap-8  md:w-1/2 ">
