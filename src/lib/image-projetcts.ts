@@ -11,7 +11,7 @@ export const imageProjects = [
         alt: 'Landing Page Agência Cami',
         title: 'Cami Agência Criativa',
         textContent: 'Desenvolvimento completo da landing page com foco em SEO, garantindo um excelente posicionamento no Google.',
-        slug: 'cami-agencia-criativa'
+        slug: 'cami-agencia'
     },
     {
         src: macenoFilms,
@@ -25,14 +25,14 @@ export const imageProjects = [
         alt: 'Site de Sinais Grupo FP',
         title: 'Grupo FP - Site de Sinais',
         textContent: 'Desenvolvimento de uma aplicação web para monitoramento de sinais de pagamento e jogadas em jogos de slots, com páginas dinâmicas atualizadas a cada 5 minutos e uma área administrativa para gerenciamento das informações.',
-        slug: 'grupo-fp-site-de-sinais'
+        slug: 'grupo-fp-sinais'
     },
     {
         src: m2Marketing,
         alt: 'Landing Page M2 Agência de Marketing',
         title: 'M2 Agência de Marketing',
         textContent: 'Desenvolvimento completo da landing page com foco em SEO, garantindo um excelente posicionamento no Google.',
-        slug: 'm2-agencia-de-marketing'
+        slug: 'm2-agencia'
     },
     // {
     //     src: izack,

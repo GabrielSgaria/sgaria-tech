@@ -11,6 +11,7 @@ import { AccordionQuestions } from "@/components/accordion-questions";
 import { imageProjects } from "@/lib/image-projetcts";
 import { Check, WhatsappLogo } from "@phosphor-icons/react";
 import { Footer } from "@/components/footer";
+import { sendMensage } from "@/lib/utils";
 
 
 export default function Home() {
@@ -29,9 +30,9 @@ export default function Home() {
             </p>
             <div className="flex gap-10 items-center justify-start h-16 md:w-[480px]">
               <ButtonContact />
-              <a className="w-40 h-12 uppercase text-center text-zinc-50 justify-center rounded-full hover:border border-zinc-400 cursor-pointer font-bold hover:text-zinc-400 transition-all sm:text-base text-sm flex items-center gap-2">
+              <Link href={`/#about`} className="w-40 h-12 uppercase text-center text-zinc-50 justify-center rounded-full hover:border border-zinc-400 cursor-pointer font-bold hover:text-zinc-400 transition-all sm:text-base text-sm flex items-center gap-2">
                 Sobre Nós <DoubleArrowRightIcon className="size-4" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex w-[380px] md:w-[450px]">
@@ -69,12 +70,20 @@ export default function Home() {
           <div className="md:w-1/2 h-1/2 w-full md:h-full flex flex-col gap-10 items-start justify-center px-10 pt-10 md:pt-0">
             <p className="text-zinc-50 font-bold text-4xl md:text-5xl">PRECISA DE UM PROJETO SOB MEDIDA?</p>
             <span className="text-zinc-300 text-lg md:text-xl">Estamos prontos para ouvir suas ideias e oferecer soluções personalizadas.</span>
-            <Link
-              href="#contacts"
-              className="shadow-lg hover:shadow-inner hover:shadow-zinc-800 flex items-center justify-center gap-2 text-sm sm:text-base bg-green-600 hover:bg-green-600/95 transition-all font-bold text-zinc-50 py-3 px-5 rounded-full"
+            <a
+              onClick={() =>
+                sendMensage(
+                  5541995373052,
+                  "Olá! Vim através do site Sgaria Tech, Preciso de um orçamento personalizado"
+                )
+              }
+              className="cursor-pointer shadow-lg hover:shadow-inner hover:shadow-zinc-800 flex items-center justify-center gap-2 text-sm sm:text-base bg-green-600 hover:bg-green-600/95 transition-all font-bold text-zinc-50 py-3 px-5 rounded-full"
             >
-              Solicitar um Orçamento Personalizado <WhatsappLogo className='size-5 font-bold' />
-            </Link>
+              <p className="font-bold">
+                Solicitar um Orçamento Personalizado
+              </p>
+              <WhatsappLogo className="size-5 font-bold" />
+            </a>
           </div>
         </div>
 
@@ -108,9 +117,7 @@ export default function Home() {
 
           </div>
           <div className="flex items-center justify-center mt-20">
-            <Link href='/portfolio' className="drop-shadow-md px-5 py-2 rounded-full transition-all hover:bg-zinc-50 hover:text-zinc-950 border border-zinc-600 bg-zinc-950 text-zinc-50 font-bold text-xl flex items-center">
-              Portfólio Completo <ChevronRightIcon className="size-5 font-bold" />
-            </Link>
+            <ButtonContact />
           </div>
         </div>
       </section>

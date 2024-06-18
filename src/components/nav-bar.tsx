@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import logoTech from '../../public/image/logoWhiteLetras.png'
 import { List, WhatsappLogo } from '@phosphor-icons/react';
+import { sendMensage } from '@/lib/utils';
 
 export function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,15 +30,15 @@ export function NavBar() {
         };
 
         window.addEventListener('resize', handleResize);
-        window.addEventListener('scroll', handleScroll); 
+        window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('resize', handleResize);
-            window.removeEventListener('scroll', handleScroll); 
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-    
+
 
     return (
         <header className={`w-full absolute top-0 z-50 ${isMenuOpen ? ' bg-zinc-950 bg-opacity-95' : 'bg-transparent'} `}>
@@ -50,7 +51,7 @@ export function NavBar() {
                                 height={9000}
                                 quality={100}
                                 priority={true}
-                                src={logoTech} 
+                                src={logoTech}
                                 alt='Logo SgariaTech'
                                 className='w-full'
                             />
@@ -78,9 +79,21 @@ export function NavBar() {
                             Sobre nós
                         </Link>
                         <div className={`${isMenuOpen ? 'hidden' : 'h-10 border-l border-zinc-950/20'}`} />
-                        <Link href="#contatos" className="hover:bg-zinc-50 hover:text-zinc-950 flex w-[230px] items-center justify-center gap-2 font-semibold bg-transparent text-sm sm:text-base border border-zinc-600 bg-zinc-950 text-zinc-50 py-2 rounded-full transition-all duration-200">
-                            ENTRAR EM CONTATO <WhatsappLogo className='size-5 sm:size-5' />
-                        </Link>
+
+                        <a
+                            onClick={() =>
+                                sendMensage(
+                                    5541995373052,
+                                    "Olá! Vim através do site Sgaria Tech!."
+                                )
+                            }
+                            className="cursor-pointer hover:bg-zinc-50 hover:text-zinc-950 flex w-[230px] items-center justify-center gap-2 font-semibold bg-transparent text-sm sm:text-base border border-zinc-600 bg-zinc-950 text-zinc-50 py-2 rounded-full transition-all"
+                        >
+                            <WhatsappLogo className="size-6" />
+                            <p className="h-6 text-base items-center justify-center font-semibold  uppercase">
+                                Entrar em contato
+                            </p>
+                        </a>
                     </nav>
                 </div>
             </div>
