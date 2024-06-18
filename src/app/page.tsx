@@ -31,9 +31,9 @@ export default function Home() {
             <p className="text-zinc-200 text-center md:text-start max-w-[530px]">
               Descubra como podemos impulsionar sua presença online hoje mesmo com criação de sites, gestão de tráfego pago, sistemas web personalizados e automação.
             </p>
-            <div className="flex gap-10 items-center justify-start h-16 md:w-[480px]">
+            <div className="flex gap-2 md:gap-10 items-center justify-start h-16 md:w-[480px]">
               <ButtonContact />
-              <Link href={`/#about`} className="w-40 h-12 uppercase text-center text-zinc-50 justify-center rounded-full hover:border border-zinc-400 cursor-pointer font-bold hover:text-zinc-400 transition-all sm:text-base text-sm flex items-center gap-2">
+              <Link href={`/#about`} className="w-28 md:w-40 h-12 uppercase text-center text-zinc-50 justify-center rounded-full hover:border border-zinc-400 cursor-pointer font-bold hover:text-zinc-400 transition-all sm:text-base text-sm flex items-center gap-2">
                 Sobre Nós <DoubleArrowRightIcon className="size-4" />
               </Link>
             </div>
