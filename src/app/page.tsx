@@ -3,7 +3,6 @@ import { ButtonContact } from "@/components/button-contact";
 import { SectionServices } from "@/components/section-services";
 import Image from "next/image";
 import { SlideCustomers } from "@/components/slide-customers";
-import gabrielImage from '/public/image/gabriel1.jpeg'
 import logo from '/public/image/logo.png'
 import Link from "next/link";
 import { ChevronRightIcon, DoubleArrowRightIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
@@ -14,11 +13,13 @@ import { Footer } from "@/components/footer";
 import { sendMensage } from "@/lib/utils";
 import { plansSt, plansTp } from "@/lib/plans";
 import { CardPlans } from "@/components/card-plans";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 
 export default function Home() {
   return (
     <main>
+      <GoogleTagManager gtmId="G-PD5592DPG5" />
       <section className="relative h-full py-40 md:py-48 bg-zinc-50 border-zinc-500/50 bg-cover bg-[url('../../public/image/background/home.png')]">
         <div className="flex flex-col-reverse md:flex-row container mx-auto gap-20 justify-around items-center px-3">
           <div className="flex flex-col gap-10 w-full md:max-w-[700px] items-center justify-start  md:items-start">
@@ -78,7 +79,7 @@ export default function Home() {
               onClick={() =>
                 sendMensage(
                   5541995373052,
-                  "Olá! Vim através do site Sgaria Tech, Preciso de um orçamento personalizado"
+                  "Olá! Vim através do site Sgaria Tech, Preciso de um Projeto Sob medida"
                 )
               }
               className="cursor-pointer shadow-lg hover:shadow-inner hover:shadow-zinc-800 flex items-center justify-center gap-2 text-sm sm:text-base bg-green-600 hover:bg-green-600/95 transition-all font-bold text-zinc-50 py-3 px-5 rounded-full"
@@ -195,7 +196,7 @@ export default function Home() {
               onClick={() =>
                 sendMensage(
                   5541995373052,
-                  "Olá! Vim através do site Sgaria Tech, Preciso de um orçamento personalizado"
+                  "Olá! Vim através do site Sgaria Tech, Preciso de um Sistiema Web sob medida."
                 )
               }
               className="cursor-pointer shadow-lg hover:shadow-inner hover:shadow-zinc-800 flex items-center justify-center gap-2 text-sm sm:text-base bg-green-600 hover:bg-green-600/95 transition-all font-bold text-zinc-50 py-3 px-5 rounded-full"
@@ -277,11 +278,11 @@ export default function Home() {
             <Image
               width={900}
               height={900}
-              src={gabrielImage}
-              alt=""
+              src={`https://sa-east-1.graphassets.com/clwqlca22006e07lv6chcfoo8/clxkg2emp03uk07ln5x1owebp`}
+              alt="CEO Image"
               quality={100}
               priority={true}
-              className="w-[550px] h-[400px] rounded-xl object-cover shadow-xl"
+              className="w-[550px] h-[450px] rounded-xl object-cover shadow-xl object-top"
             />
           </div>
 

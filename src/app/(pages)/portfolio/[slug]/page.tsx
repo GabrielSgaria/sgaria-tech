@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 import { ButtonContact } from "@/components/button-contact";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 interface PageJobProps {
     params: {
@@ -55,6 +56,7 @@ export default async function PageJob({ params: { slug } }: PageJobProps) {
     return (
 
         <div className={cn(`h-full `, colorBgMap[slug])}>
+            <GoogleTagManager gtmId="G-PD5592DPG5" />
             <div className="flex container mx-auto pt-40 pb-20 h-full">
                 <section className="w-full flex flex-col justify-center items-center px-3 md:px-20 gap-10">
                     <div className="flex flex-col gap-3 items-start w-full pl-5">
