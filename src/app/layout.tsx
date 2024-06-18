@@ -58,12 +58,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt" className="scroll-smooth focus:scroll-auto">
-      <GoogleAnalytics gaId="G-PD5592DPG5" />
       <body className={`bg-zinc-50 text-zinc-950 ${roboto.className}`}>
         <NavBar />
         <ButtonWhatsAppFixed />
         {children}
       </body>
+      <GoogleAnalytics gaId="G-PD5592DPG5" />
     </html>
   );
 }
