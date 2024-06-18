@@ -13,7 +13,7 @@ import { Footer } from "@/components/footer";
 import { sendMensage } from "@/lib/utils";
 import { plansSt, plansTp } from "@/lib/plans";
 import { CardPlans } from "@/components/card-plans";
-import { GoogleAnalytics, GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 
 export default function Home() {

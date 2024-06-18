@@ -1,4 +1,5 @@
 'use client'
+import { sendMensage } from '@/lib/utils';
 import { WhatsappLogo } from '@phosphor-icons/react';
 import {
   DesktopIcon,
@@ -25,16 +26,24 @@ export function Footer() {
             Sinta-se à vontade para entrar em contato comigo a qualquer momento.
           </p>
           <div className="mt-8 flex flex-col gap-4 text-center sm:items-start sm:justify-start">
-            <Link
+            <a
+            onClick={() =>
+              sendMensage(
+                  5541995373052,
+                  "Olá! Vim através do site Sgaria Tech."
+              )
+          }
               target="blank"
-              href="https://wa.me/message/AP73SUCU555EJ1"
               className="flex cursor-pointer items-center justify-center gap-4 text-zinc-800"
             >
               <WhatsappLogo className="size-6" />
               <p className="h-6 items-center  justify-center font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800">
                 (41) 99537-3052
               </p>
-            </Link>
+            </a>
+
+
+
             <Link
               target="blank"
               href="mailto:gabriel_sgaria2@outlook.com"
@@ -53,29 +62,29 @@ export function Footer() {
             recentes
           </h1>
           <ul className="mt-8 flex flex-col gap-4 ">
-            <a href="/DreamsAndAchievements">
+            <a href="https://www.camiagencia.com.br">
               <li className="h-6 text-center font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800 sm:text-start">
-                App Sonhos e Conquistas
+                Cami Agencia Criativa
               </li>
             </a>
-            <a href="/ExpertNotes">
+            <a href="https://www.macenofilms.com.br">
               <li className="h-6 text-center font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800 sm:text-start">
-                App Notas
+                Maceno Films Company
               </li>
             </a>
-            <a href="/MacenoFilmsCompany">
+            <a href="https://www.mdois.com.br">
               <li className="h-6 text-center font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800 sm:text-start">
-                Maceno Films
+                M2 Agência de Marketing
               </li>
             </a>
-            <a href="/AgsArCondicionados">
+            <a href="https://www.volpress.com.br">
               <li className="h-6 text-center font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800 sm:text-start">
-                Ags Ar Condicionados
+                Volpress Transportes
               </li>
             </a>
-            <a href="/ListaDeTarefas">
+            <a href="https://izackautomoveis.com">
               <li className="h-6 text-center font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800 sm:text-start">
-                Lista de tarefas
+                Izack Automóveis
               </li>
             </a>
           </ul>
@@ -91,11 +100,11 @@ export function Footer() {
         </div>
         <div className="flex flex-col items-center sm:items-start">
           <h1 className="text-center text-2xl font-black text-zinc-800 sm:text-start ">
-            Me encontre nas <br />
+            Nos encontre nas <br />
             redes sociais
           </h1>
           <div className="mt-8 flex flex-col items-center gap-4 sm:items-start">
-            <Link
+            {/* <Link
               target="blank"
               href="https://github.com/GabrielSgaria"
               className="flex cursor-pointer flex-row items-center gap-4 text-zinc-800"
@@ -104,25 +113,25 @@ export function Footer() {
               <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800">
                 github.com/GabrielSgaria
               </p>
-            </Link>
+            </Link> */}
             <Link
               target="blank"
-              href="https://www.linkedin.com/in/gabriel-sgaria/"
+              href="https://www.linkedin.com/company/sgaria-tech/"
               className="flex cursor-pointer flex-row items-center gap-4 text-zinc-800"
             >
               <LinkedInLogoIcon className="size-6" />
               <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800">
-                www.linkedin.com/in/gabriel-sgaria/
+              www.linkedin.com/company/sgaria-tech/
               </p>
             </Link>
             <Link
               target="blank"
-              href="https://www.instagram.com/_gabrielsgaria"
+              href="https://www.instagram.com/sg.sites/"
               className="flex cursor-pointer flex-row items-center gap-4 text-zinc-800"
             >
               <InstagramLogoIcon className="size-6" />
               <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-zinc-800">
-                @_gabrielsgaria
+                @sg.sites
               </p>
             </Link>
           </div>
