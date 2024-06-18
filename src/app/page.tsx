@@ -99,7 +99,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row md:gap-x-32 gap-y-10  mt-20 mx-auto">
             {imageProjects.map((imageProjects, index) => (
               <div key={index} className="flex flex-col overflow-hidden gap-5 drop-shadow-md hover:drop-shadow-xl transition-all">
-                <Link href={imageProjects.slug}>
+                <Link href={`/portfolio/${imageProjects.slug}`}>
                   <Image
                     width={9000}
                     height={9000}

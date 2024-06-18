@@ -1,5 +1,5 @@
 import { fetchHygraphQuery } from "@/lib/fetch-hygraph";
-import { PageProjectsData } from "../../../../types/portfolio-info";
+import { PageProjectsData } from "../../../../../types/portfolio-info";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
