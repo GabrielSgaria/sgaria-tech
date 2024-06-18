@@ -135,7 +135,7 @@ export default function Home() {
               <span className="mt-10 md:mt-0 md:text-center text-base md:text-lg text-zinc-300 font-normal max-w-[580px]">
                 Temos o orgulho de colaborar com diversas empresas inovadoras e líderes em seus setores.
                 Nossa dedicação em fornecer soluções digitais personalizadas e eficazes nos permitiu construir parcerias duradouras e de sucesso.
-                Aqui estão alguns dos nossos clientes que confiaram em nós para transformar suas ideias em realidade
+                Aqui estão alguns dos nossos clientes que confiaram em nós para transformar suas ideias em realidade.
               </span>
             </div>
             <SlideCustomers />
