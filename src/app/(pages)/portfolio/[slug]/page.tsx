@@ -57,7 +57,7 @@ export default async function PageJob({ params: { slug } }: PageJobProps) {
 
         <div className={cn(`h-full `, colorBgMap[slug])}>
             <GoogleAnalytics gaId="G-PD5592DPG5" />
-            <GoogleTagManager gtmId="GTM-5L336KFG" />
+            <GoogleTagManager gtmId="G-PD5592DPG5" />
             <div className="flex container mx-auto pt-40 pb-20 h-full">
                 <section className="w-full flex flex-col justify-center items-center px-3 md:px-20 gap-10">
                     <div className="flex flex-col gap-3 items-start w-full pl-5">
