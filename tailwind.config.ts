@@ -13,6 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'cami-agencia': '#a76243',
+        'maceno-films-company': '#0a0a0a',
+        'm2-agencia': '#0369a1',
+        'grupo-fp-sinais': '#15803d',
+
+      },
     },
   },
   plugins: [],

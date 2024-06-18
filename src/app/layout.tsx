@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`bg-zinc-50 text-zinc-950 ${roboto.className}`}>
         <NavBar />
         {children}
-        <Footer />
+        
       </body>
     </html>
   );

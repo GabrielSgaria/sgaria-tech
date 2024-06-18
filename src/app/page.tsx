@@ -9,7 +9,8 @@ import Link from "next/link";
 import { ChevronRightIcon, DoubleArrowRightIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { AccordionQuestions } from "@/components/accordion-questions";
 import { imageProjects } from "@/lib/image-projetcts";
-import { WhatsappLogo } from "@phosphor-icons/react";
+import { Check, WhatsappLogo } from "@phosphor-icons/react";
+import { Footer } from "@/components/footer";
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
         <div className="flex flex-col-reverse md:flex-row container mx-auto gap-20 justify-around items-center px-3">
           <div className="flex flex-col gap-10 w-full md:max-w-[700px] items-center justify-start  md:items-start">
             <p className="text-4xl md:text-5xl font-semibold text-zinc-50 uppercase text-center md:text-start ">
-              Especialistas em <br />desenvolvimento  
+              Especialistas em <br />desenvolvimento
               para transformar sua ideia em
               <span className=""> realidade digital.</span>
             </p>
@@ -34,7 +35,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex w-[380px] md:w-[450px]">
-            <Image 
+            <Image
               width={9000}
               height={9000}
               src={logo}
@@ -63,8 +64,8 @@ export default function Home() {
 
         </div>
       </section>
-      <section className="py-10 container mx-auto px-3 md:px-20">
-        <div className="bg-bottom bg-cover md:bg-top bg-no-repeat w-full h-[700px] bg-[url('../../public/image/background/bg-wpp-mobile.png')] md:bg-[url('../../public/image/background/bg-wpp.png')] rounded-3xl flex md:h-[500px] items-start justify-center md:items-center md:justify-end shadow-lg">
+      <section className="py-10 container mx-auto px-3 md:px-20 flex justify-center">
+        <div className="bg-bottom bg-cover md:bg-top bg-no-repeat max-w-[1120px] w-full h-[700px] bg-[url('../../public/image/background/bg-wpp-mobile.png')] md:bg-[url('../../public/image/background/bg-wpp.png')] rounded-3xl flex md:h-[500px] items-start justify-center md:items-center md:justify-end shadow-lg">
           <div className="md:w-1/2 h-1/2 w-full md:h-full flex flex-col gap-10 items-start justify-center px-10 pt-10 md:pt-0">
             <p className="text-zinc-50 font-bold text-4xl md:text-5xl">PRECISA DE UM PROJETO SOB MEDIDA?</p>
             <span className="text-zinc-300 text-lg md:text-xl">Estamos prontos para ouvir suas ideias e oferecer soluções personalizadas.</span>
@@ -132,6 +133,106 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto container flex flex-col px-3 items-center justify-center">
+          <div className="grid grid-flow-row grid-cols-3 gap-10">
+
+            <div className="bg-zinc-50 border border-zinc-100 w-[420px] h-[620px] rounded-3xl shadow-2xl pt-10 px-5 mb-8">
+              <div className="flex flex-col gap-3">
+                <h1 className="text-3xl font-bold">Tráfego Pago Básico</h1>
+                <span className="text-lg text-zinc-600">Para quem investe até R$1500,00 em anúncios.</span>
+                <div className="flex flex-row gap-2 items-end justify-start">
+                  <span className="text-3xl font-black ">R$600,00</span>
+                  <span className="text-lg font-black">/ mês</span>
+                </div>
+              </div>
+              <ul className="flex flex-col gap-6 mt-10">
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Gestão mensal de tráfego pago</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Criação de Público</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Otimização de anúncios</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Relatórios mensais de desempenho</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-zinc-50 border border-zinc-100 w-[420px] h-[620px] rounded-3xl shadow-2xl pt-10 px-5 mb-8">
+              <div className="flex flex-col gap-3">
+                <h1 className="text-3xl font-bold">Tráfego Pago Intermediário</h1>
+                <span className="text-lg text-zinc-600">Para quem investe até R$5000,00 em anúncios.</span>
+                <div className="flex flex-row gap-2 items-end justify-start">
+                  <span className="text-3xl font-black ">R$1200,00</span>
+                  <span className="text-lg font-black">/ mês</span>
+                </div>
+              </div>
+              <ul className="flex flex-col gap-6 mt-10">
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Gestão mensal de tráfego pago</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Criação de Públicos Avançados</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Otimização contínua de campanhas</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Análises detalhadas e relatórios quinzenais</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-zinc-50 border border-zinc-100 w-[420px] h-[620px] rounded-3xl shadow-2xl pt-10 px-5 mb-8">
+              <div className="flex flex-col gap-3">
+                <h1 className="text-3xl font-bold">Tráfego Pago Premium</h1>
+                <span className="text-lg text-zinc-600">Para quem investe até R$10.000,00 em anúncios.</span>
+                <div className="flex flex-row gap-2 items-end justify-start">
+                  <span className="text-3xl font-black ">R$3500,00</span>
+                  <span className="text-lg font-black">/ mês</span>
+                </div>
+              </div>
+              <ul className="flex flex-col gap-6 mt-10">
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Gestão mensal de tráfego pago</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Estratégias de segmentação premium</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Otimização contínua com IA</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Consultoria estratégica personalizada</span>
+                </li>
+                <li className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
+                  <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
+                  <span>Relatórios personalizados e reuniões diárias</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* <section>
         DEPOIMENTOS
@@ -212,7 +313,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section></section>
 
       <section className="py-16 bg-zinc-50 ">
         <div className="mx-auto container flex flex-col md:flex-row px-3 items-center min-h-[550px] gap-10">
@@ -229,8 +329,8 @@ export default function Home() {
             <AccordionQuestions />
           </div>
         </div>
+        <Footer />
       </section>
-
     </main >
   );
 }
