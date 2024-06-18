@@ -52,7 +52,6 @@ export default async function PageJob({ params: { slug } }: PageJobProps) {
         return <div className="flex text-2xl text-red-600 items-center justify-center h-screen w-full">Projetos não encontrados</div>;
     }
 
-
     return (
 
         <div className={cn(`h-full `, colorBgMap[slug])}>
