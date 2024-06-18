@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: '../../public/favicon.png',
-        width: 500,
-        height: 500,
+        url: 'https://sa-east-1.graphassets.com/clwqlca22006e07lv6chcfoo8/clxknt8uv089x07kdxn6a2qb5',
+        width: 1250,
+        height: 1250,
       }
     ],
   },
