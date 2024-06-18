@@ -13,13 +13,13 @@ import { Footer } from "@/components/footer";
 import { sendMensage } from "@/lib/utils";
 import { plansSt, plansTp } from "@/lib/plans";
 import { CardPlans } from "@/components/card-plans";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleAnalytics } from "@next/third-parties/google";
 
 
 export default function Home() {
   return (
     <main>
-      <GoogleTagManager gtmId="G-PD5592DPG5" />
+        <GoogleAnalytics gaId="G-PD5592DPG5" />
       <section className="relative h-full py-40 md:py-48 bg-zinc-50 border-zinc-500/50 bg-cover bg-[url('../../public/image/background/home.png')]">
         <div className="flex flex-col-reverse md:flex-row container mx-auto gap-20 justify-around items-center px-3">
           <div className="flex flex-col gap-10 w-full md:max-w-[700px] items-center justify-start  md:items-start">
