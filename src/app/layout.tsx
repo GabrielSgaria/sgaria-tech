@@ -12,7 +12,44 @@ export const metadata: Metadata = {
   title: "SgariaTech - Sites profissionais",
   description: "SgariaTech - Criação de sites profissionais te diferenciando do mercado!",
   icons: "/favicon.png",
+  metadataBase: new URL("https://www.sgariatech.com.br"),
+  openGraph: {
+    title: "SgariaTech - Sites profissionais",
+    description: "SgariaTech - Criação de sites profissionais te diferenciando do mercado!",
+    url: "https://www.sgariatech.com.br",
+    siteName: "SgariaTech - Sites profissionais",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: '../../public/favicon.png',
+        width: 500,
+        height: 500,
+      }
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    },
+  },
+  keywords: [
+    "desenvolvimento de sites", "criação de sites", "sites profissionais", "design de websites", "marketing digital", "otimização de SEO",
+    "experiência do usuário", "sites responsivos", "plataformas digitais", "presença online", "estratégias de marketing", "sites atraentes",
+    "layout personalizado", "hospedagem de sites", "design de interface", "conteúdo relevante", "branding digital", "consultoria em websites",
+    "soluções web", "sites modernos", "inovação digital", "sites acessíveis", "engajamento do usuário", "análise de dados", "otimização de conversão",
+    "SEO local", "marketing de conteúdo", "redes sociais", "comércio eletrônico", "e-commerce", "criação de blogs", "portfólio online",
+    "sites corporativos", "sistemas web", "aplicações web", "desenvolvimento frontend", "desenvolvimento backend", "tecnologia web",
+    "interface intuitiva", "performance de sites", "experiência de compra", "suporte técnico", "manutenção de sites", "segurança digital",
+    "sites rápidos", "integração de sistemas", "personalização de websites", "sistemas CMS", "gestão de conteúdo",
+  ]
 };
+
 
 export default function RootLayout({
   children,

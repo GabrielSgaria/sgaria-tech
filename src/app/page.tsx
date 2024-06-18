@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main>
       <GoogleAnalytics gaId="G-PD5592DPG5" />
-      <section className="relative h-full py-40 md:py-48 bg-zinc-50 border-zinc-500/50 bg-cover bg-[url('../../public/image/background/home.png')]">
+      <section className="w-full h-full py-40 md:py-48 bg-zinc-50 border-zinc-500/50 bg-cover bg-[url('../../public/image/background/home.png')]">
         <div className="flex flex-col-reverse md:flex-row container mx-auto gap-20 justify-around items-center px-3">
           <div className="flex flex-col gap-10 w-full md:max-w-[700px] items-center justify-start  md:items-start">
             <p className="text-4xl md:text-5xl font-semibold text-zinc-50 uppercase text-center md:text-start ">
@@ -38,7 +38,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex w-[380px] md:w-[450px]">
+          <div className="flex w-full md:w-[450px]">
             <Image
               width={9000}
               height={9000}
