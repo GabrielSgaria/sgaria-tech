@@ -1,7 +1,6 @@
 'use client'
 import { sendMensage } from '@/lib/utils';
 import {WhatsappLogo } from '@phosphor-icons/react';
-import Link from "next/link";
 
 export function ButtonContact() {
     return (
