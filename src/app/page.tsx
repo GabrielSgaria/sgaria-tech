@@ -19,7 +19,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 export default function Home() {
   return (
     <main>
-        <GoogleAnalytics gaId="G-PD5592DPG5" />
+      <GoogleAnalytics gaId="G-PD5592DPG5" />
       <section className="relative h-full py-40 md:py-48 bg-zinc-50 border-zinc-500/50 bg-cover bg-[url('../../public/image/background/home.png')]">
         <div className="flex flex-col-reverse md:flex-row container mx-auto gap-20 justify-around items-center px-3">
           <div className="flex flex-col gap-10 w-full md:max-w-[700px] items-center justify-start  md:items-start">
@@ -151,7 +151,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center mt-10 gap-5">
             <h1 className="text-3xl md:text-4xl font-bold text-center md:text-start">Planos Personalizados para Gestão de Tráfego Pago</h1>
             <p className="text-center text-base md:text-lg text-zinc-600 max-w-2xl ">
-              Desenvolvemos soluções de tráfego pago utilizando as melhores tecnologias atuais para garantir resultados excepcionais. Nossa equipe utiliza Next.js e React para criar plataformas rápidas, escaláveis e de alta performance, que otimizam seus investimentos em anúncios.
+              Descubra o potencial do tráfego pago com nossos planos personalizados. Potencialize sua presença online e alcance seu público-alvo de forma estratégica e eficaz.
             </p>
             <div className="grid grid-flow-row  md:grid-cols-3 gap-7 mt-5">
               {plansTp.map((plan, index) => (

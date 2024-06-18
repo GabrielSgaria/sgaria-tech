@@ -15,7 +15,7 @@ import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer id='contatos' className="mt-16 border-t-[1px] border-zinc-200 pb-8 ">
+    <footer id='contatos' className="mt-16 border-t-[1px] border-zinc-200 pb-6">
       <div className="container mx-auto mt-16 flex flex-col gap-16 sm:flex-row sm:justify-between sm:gap-0">
         <div className="flex flex-col items-center sm:items-start ">
           <h1 className="text-2xl font-black text-zinc-800 ">
