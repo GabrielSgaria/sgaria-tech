@@ -71,7 +71,7 @@ export const plansSt = [{
 {
     title: 'Site Institucional',
     desc: 'Para empresas que querem ter uma presença digital exclusiva.',
-    value: 'A partir de R$1750,00',
+    value: 'A partir de R$1500,00',
     duration: '',
     benefits: [
         'Otimização SEO',
