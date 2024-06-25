@@ -42,7 +42,7 @@ export const plansTp = [{
 export const plansSt = [{
     title: 'Landing Page Básica',
     desc: 'Ideal para quem precisa de uma página simples e eficaz.',
-    value: 'A partir de R$650,00',
+    value: 'A partir de R$850,00',
     duration: '',
     benefits: [
         'Design Responsivo',
