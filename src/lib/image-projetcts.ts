@@ -1,6 +1,7 @@
 import agCami from '../../public/image/projects/ag-cami.png';
 import macenoFilms from '../../public/image/projects/maceno-films.png';
 import grupoFp from '../../public/image/projects/grupo-fp2.png';
+import draMari from '../../public/image/projects/dra-mari.png'
 import izack from '../../public/image/projects/izack-1.png';
 import m2Marketing from '../../public/image/projects/m2-marketing.png';
 import volpress from '../../public/image/projects/volpress.png';
@@ -21,11 +22,11 @@ export const imageProjects = [
         slug: 'maceno-films-company'
     },
     {
-        src: grupoFp,
-        alt: 'Site de Sinais Grupo FP',
-        title: 'Grupo FP - Site de Sinais',
-        textContent: 'Desenvolvimento de uma aplicação web para monitoramento de sinais de pagamento e jogadas em jogos de slots, com páginas dinâmicas atualizadas a cada 5 minutos e uma área administrativa para gerenciamento das informações.',
-        slug: 'grupo-fp-sinais'
+        src: draMari,
+        alt: 'Site Dra. Mariana Pereira',
+        title: 'Dra. Mariana Pereria',
+        textContent: 'Desenvolvimento completo da landing page com foco em SEO, garantindo um excelente posicionamento no Google.',
+        slug: 'dra-mariana-pereira'
     },
     {
         src: m2Marketing,

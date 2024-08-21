@@ -23,8 +23,8 @@ export function CardPlans({ title, desc, value, duration, benefits }: CardPlansP
             <ul className="flex flex-col gap-6 mt-10">
                 {Object.values(benefits).map((benefit, index) => (
                     <li key={index} className="text-zinc-950 flex items-center justify-start gap-3 text-lg font-medium">
-                        <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50" weight="bold" />
-                        <span>{benefit}</span>
+                        <Check className="size-8 p-1 bg-green-600 rounded-xl text-zinc-50 min-w-8" weight="bold" />
+                        <span className="w-full">{benefit}</span>
                     </li>
                 ))}
             </ul>

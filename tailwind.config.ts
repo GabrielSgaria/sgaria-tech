@@ -18,6 +18,7 @@ const config: Config = {
         'maceno-films-company': '#0a0a0a',
         'm2-agencia': '#0369a1',
         'grupo-fp-sinais': '#15803d',
+        'dra-mariana-pereira' : '#9d174d'
 
       },
     },

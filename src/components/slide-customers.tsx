@@ -32,7 +32,7 @@ export function SlideCustomers() {
                 }}
                 extensions={{ AutoScroll }}
             >
-                <SplideSlide className="flex items-center">
+                {/* <SplideSlide className="flex items-center">
                     <Image
                         width={9000}
                         height={9000}
@@ -41,7 +41,7 @@ export function SlideCustomers() {
                         src='/image/customers/fp.png'
                         className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100 saturate-0 hover:saturate-100"
                     />
-                </SplideSlide>
+                </SplideSlide> */}
                 <SplideSlide className="flex items-center">
                     <Image
                         width={9000}
@@ -58,10 +58,20 @@ export function SlideCustomers() {
                         height={9000}
                         quality={100}
                         alt=""
+                        src='/image/customers/poyos-nova-logo.png'
+                        className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100 saturate-0 hover:saturate-100"
+                    />
+                </SplideSlide>
+                {/* <SplideSlide className="flex items-center">
+                    <Image
+                        width={9000}
+                        height={9000}
+                        quality={100}
+                        alt=""
                         src="/image/customers/kf.png"
                         className="w-16 max-w-16 md:w-24 md:max-w-24 opacity-65 hover:opacity-100 saturate-0 hover:saturate-100 rounded-md"
                     />
-                </SplideSlide>
+                </SplideSlide> */}
                 <SplideSlide className="flex items-center">
                     <Image
                         width={9000}

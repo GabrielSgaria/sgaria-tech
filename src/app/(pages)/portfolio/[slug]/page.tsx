@@ -17,6 +17,7 @@ const colorBgMap: Record<string, string> = {
     'maceno-films-company': 'bg-maceno-films-company',
     'm2-agencia': 'bg-m2-agencia',
     'grupo-fp-sinais': 'bg-grupo-fp-sinais',
+    'dra-mariana-pereira' : 'bg-dra-mariana-pereira'
 
 }
 

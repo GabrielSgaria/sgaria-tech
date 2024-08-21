@@ -7,7 +7,8 @@ export const plansTp = [{
         'Gestão mensal de tráfego pago',
         'Criação de Público',
         'Otimização de anúncios',
-        'Relatórios mensais de desempenho'
+        'Relatórios quinzenais de desempenho',
+        '1 Reunião Mensal'
     ]
 },
 {
@@ -17,23 +18,26 @@ export const plansTp = [{
     duration: '/ mês',
     benefits: [
         'Gestão mensal de tráfego pago',
-        'Criação de Públicos Avançados',
-        'Otimização contínua de campanhas',
-        'Análises detalhadas e relatórios quinzenais'
+        'Criação de Públicos',
+        'Otimização de anúncios',
+        'Relatórios semanais de desempenho',
+        '2 Reuniões Mensais',
+        'Planejamento mensal'
     ]
 },
 {
     title: 'Tráfego Pago Premium',
-    desc: 'Para quem investe até R$10.000,00 em anúncios.',
-    value: 'R$3500,00',
+    desc: 'Para quem investe mais de R$5.000,00 em anúncios.',
+    value: '35% Do Valor Investido',
     duration: '/ mês',
     benefits: [
         'Gestão mensal de tráfego pago',
-        'Estratégias de segmentação premium',
-        'Otimização contínua com IA',
+        'Criação de Públicos',
+        'Otimização de anúncios',
+        '1 Reunião Semanal',
+        'Planejamento mensal',
         'Consultoria estratégica personalizada',
-        'Relatórios personalizados e reuniões diárias',
-
+        'Relatórios personalizados e reuniões diárias (se necessário)',
     ]
 },
 ]
