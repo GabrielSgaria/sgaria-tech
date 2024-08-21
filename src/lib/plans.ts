@@ -34,10 +34,10 @@ export const plansTp = [{
         'Gestão mensal de tráfego pago',
         'Criação de Públicos',
         'Otimização de anúncios',
+        'Relatórios personalizados e reuniões diárias (se necessário)',
         '1 Reunião Semanal',
         'Planejamento mensal',
         'Consultoria estratégica personalizada',
-        'Relatórios personalizados e reuniões diárias (se necessário)',
     ]
 },
 ]
