@@ -32,7 +32,7 @@ export function CardPlans({ title, desc, value, duration, benefits }: CardPlansP
                 <a
                     onClick={() =>
                         sendMensage(
-                            5541995373052,
+                            5541992652259,
                             `Olá! Vim pelo plano ${title}, que vi no site Sgaria Tech. `
                         )
                     }

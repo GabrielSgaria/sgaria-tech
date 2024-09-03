@@ -29,7 +29,7 @@ export function Footer() {
             <a
             onClick={() =>
               sendMensage(
-                  5541995373052,
+                5541992652259,
                   "Olá! Vim através do site Sgaria Tech."
               )
           }

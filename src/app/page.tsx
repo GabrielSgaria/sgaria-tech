@@ -78,7 +78,7 @@ export default function Home() {
             <a
               onClick={() =>
                 sendMensage(
-                  5541995373052,
+                  5541992652259,
                   "Olá! Vim através do site Sgaria Tech, Preciso de um Projeto Sob medida"
                 )
               }
@@ -195,7 +195,7 @@ export default function Home() {
             <a
               onClick={() =>
                 sendMensage(
-                  5541995373052,
+                  5541992652259,
                   "Olá! Vim através do site Sgaria Tech, Preciso de um Sistiema Web sob medida."
                 )
               }
